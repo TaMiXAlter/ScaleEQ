@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class MovingEnemies : MonoBehaviour
 {
-    [SerializeField] private float MoveSpeed;
+    public float MoveSpeed { get; set; }
     private Rigidbody2D rigi;
     [SerializeField] private float amplitude = 1.0f;
     [SerializeField] private float frequency = 1.0f;
 
+    private Vector2 targetPosition;
 
     public enum MovementType
     {
@@ -18,7 +19,7 @@ public class MovingEnemies : MonoBehaviour
 
     }
     public MovementType movementType;
-    private GameObject Player;
+
 
 
     void Start()
@@ -39,16 +40,18 @@ public class MovingEnemies : MonoBehaviour
                 rigi.velocity = new Vector2(MoveSpeed, sineWave);
                 break;
             case MovementType.FacingPlayer:
-                MoveTowardsPlayer(GameObject.FindWithTag("Player"));
-                Destroy(gameObject, 5);
+                MoveTowardsPlayer();
                 break;
         }
-
-
     }
-    void MoveTowardsPlayer(GameObject Player)
+    public void SetTargetPosition(Vector2 playerPosition)
     {
-        Vector2 direction = (Player.transform.position - transform.position).normalized;
+        targetPosition = playerPosition;
+    }
+    void MoveTowardsPlayer()
+    {
+
+        Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
 
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
