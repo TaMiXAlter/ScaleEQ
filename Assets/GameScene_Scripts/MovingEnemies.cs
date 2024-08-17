@@ -10,7 +10,6 @@ public class MovingEnemies : MonoBehaviour
     [SerializeField] private float frequency = 1.0f;
 
     private Vector2 targetPosition;
-
     public enum MovementType
     {
         HorizontalMoving,
@@ -19,8 +18,6 @@ public class MovingEnemies : MonoBehaviour
 
     }
     public MovementType movementType;
-
-
 
     void Start()
     {
@@ -41,12 +38,16 @@ public class MovingEnemies : MonoBehaviour
                 break;
             case MovementType.FacingPlayer:
                 MoveTowardsPlayer();
-                break;
+            break;
         }
+
+        
+
     }
     public void SetTargetPosition(Vector2 playerPosition)
     {
         targetPosition = playerPosition;
+
     }
     void MoveTowardsPlayer()
     {
