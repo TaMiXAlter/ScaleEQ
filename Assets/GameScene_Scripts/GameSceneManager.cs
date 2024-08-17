@@ -5,10 +5,10 @@ using UnityEngine;
 [System.Serializable]
 public class SpawnObstacle
 {
-    public GameObject Obstacle;
     public int SpawnTime;
+    public GameObject Obstacle;
     public Transform SpawnPoint;
-    private bool hasSpawned = false;
+    [SerializeField] public bool hasSpawned { get; set; }
 }
 public class GameSceneManager : MonoBehaviour
 {
@@ -24,24 +24,24 @@ public class GameSceneManager : MonoBehaviour
     }
     private GameState state;
 
-
     [SerializeField] private SpawnObstacle[] SpawnObstacles;
     void Start()
     {
         state = GameState.WaitForStart;
     }
-
-
     void Update()
     {
         Debug.Log(state);
         GameStateDetect();
-
-
-
-
+        foreach (SpawnObstacle _spawnObstacles in SpawnObstacles)
+        {
+            if (Timer >= _spawnObstacles.SpawnTime && !_spawnObstacles.hasSpawned)
+            {
+                Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
+                _spawnObstacles.hasSpawned = true;
+            }
+        }
     }
-
     private void GameStateDetect()
     {
         switch (state)

@@ -5,9 +5,10 @@ using UnityEngine;
 public class DamagePlayer : MonoBehaviour
 {
     [SerializeField] private int Damage;
-    void OnTriggerEnter(Collider other)
+
+    void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(Damage);
             Destroy(gameObject);
