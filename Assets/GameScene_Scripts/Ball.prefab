@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3546619463157880657}
   - component: {fileID: 1204476334935697849}
   - component: {fileID: 6240450145573417650}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ball
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -115,6 +115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amplitude: 1
   frequency: 1
+  followDuration: 5
   movementType: 2
 --- !u!50 &1204476334935697849
 Rigidbody2D:
@@ -138,7 +139,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0

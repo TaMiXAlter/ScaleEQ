@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4995585894807983407}
   - component: {fileID: 8904190029579675651}
   - component: {fileID: 4174956734725820942}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bird
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
@@ -131,7 +131,7 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 0
