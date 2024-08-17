@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private Rigidbody rigi;
+    private Rigidbody2D rigi;
     [SerializeField] private float MoveSpeed;
     [SerializeField] private float JumpHeight;
 
     void Start()
     {
-        rigi = GetComponent<Rigidbody>();
+        rigi = GetComponent<Rigidbody2D>();
     }
 
     void Update()
     {
-        rigi.velocity = new Vector3(Input.GetAxis("Horizontal") * MoveSpeed, rigi.velocity.y, rigi.velocity.z);
+        rigi.velocity = new Vector2(Input.GetAxis("Horizontal") * MoveSpeed, rigi.velocity.y);
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            rigi.velocity = new Vector3(rigi.velocity.x, JumpHeight, rigi.velocity.z);
+            rigi.velocity = new Vector2(rigi.velocity.x, JumpHeight);
         }
     }
 }
