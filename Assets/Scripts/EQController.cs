@@ -9,7 +9,8 @@ using UnityEngine.U2D;
 
 public class EQController : MonoBehaviour
 {
-    public float[] controlPointsValue = new float[3];
+    [NonSerialized]
+    public float[] controlPointsValue = new float[3]{.5f,.5f,.5f};
     [SerializeField]
     private float RightEdge,LeftEdge,TopEdge,BottomEdge;
 
@@ -42,6 +43,8 @@ public class EQController : MonoBehaviour
         _spriteShapeController.spline.SetPosition(index, postion);
         
         EQControllPoint controllPoint = SpawnGameObject.GetComponent<EQControllPoint>();
+        float Range = (RightEdge - LeftEdge)/3;
+        controllPoint.SetLimit(LeftEdge+index*Range,LeftEdge + (index+1)*Range);
         controllPoint.MouseDrag.AddListener(DragEvent);
     }
 

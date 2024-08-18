@@ -169,10 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa58059d151bb7647a81764fec3bd90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPointsValue:
-  - 0
-  - 0
-  - 0
   RightEdge: 9
   LeftEdge: -9
   TopEdge: 5
@@ -662,10 +658,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eqController: {fileID: 432337067}
+  TopEdge: 10
+  BottomEdge: -10
   XKnotStartPoint: -8.84
   XSpaceing: 3
-  YAduioModifier: 30
-  YControllerModifier: 30
+  YAduioModifier: 0.508
+  YControllerModifier: 0.52
 --- !u!4 &1123595239
 Transform:
   m_ObjectHideFlags: 0
@@ -675,7 +673,7 @@ Transform:
   m_GameObject: {fileID: 1123595236}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
