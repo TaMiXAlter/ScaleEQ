@@ -164,7 +164,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: c1da615f7e0a9f742887d8aee2578c52, type: 2}
-  m_audioClip: {fileID: 8300000, guid: aeed87d70139d6643bcee33822483319, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4d872d8b172fb8b4e8f89db9ef112e46, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -332,8 +332,8 @@ Transform:
   m_GameObject: {fileID: 182007738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -0.28, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.1655, y: -0.4355, z: 0}
+  m_LocalScale: {x: 0.689, y: 0.689, z: 0.689}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad0e08ca552fec449e91445c54f06b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Init_PlayerHealth: 2
+  Init_PlayerHealth: 900
 --- !u!50 &182007747
 Rigidbody2D:
   serializedVersion: 4
@@ -528,74 +528,92 @@ MonoBehaviour:
   SpawnObstacles:
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -5
-    SpawnTime: 1
+    SpawnTime: 1.5
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -5
-    SpawnTime: 7
+    SpawnTime: 3.5
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 5.4
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 7.38
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -5
-    SpawnTime: 3
-    SpawnPoint: {fileID: 1519590636}
-    amplitude: 8
-    frequency: 2
+    SpawnTime: 8.3
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 1
+    frequency: 1
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: 5
+    MoveSpeed: -5
     SpawnTime: 9
-    SpawnPoint: {fileID: 2005701081}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: 5
-    SpawnTime: 10
-    SpawnPoint: {fileID: 982915421}
-    amplitude: 8
-    frequency: 2
-  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
-    MoveSpeed: 5
-    SpawnTime: 11
-    SpawnPoint: {fileID: 2140783580}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -6
-    SpawnTime: 11
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
-    MoveSpeed: 5
-    SpawnTime: 13
-    SpawnPoint: {fileID: 1007305123}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 9.3
+    SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -7
-    SpawnTime: 13
-    SpawnPoint: {fileID: 1519590636}
-    amplitude: 8
-    frequency: 2
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -6
-    SpawnTime: 14
+    MoveSpeed: -5
+    SpawnTime: 10.9
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 11.3
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: 7
-    SpawnTime: 14
-    SpawnPoint: {fileID: 982915421}
+    MoveSpeed: -5
+    SpawnTime: 11.6
+    SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
-    MoveSpeed: 6
-    SpawnTime: 15
-    SpawnPoint: {fileID: 1007305123}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 12.9
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 13.25
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 14.06
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 14.4
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 14.4
+    SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
 --- !u!1 &477194381
@@ -840,7 +858,7 @@ Transform:
   m_GameObject: {fileID: 982915420}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.35, y: -9.08, z: 0.19489174}
+  m_LocalPosition: {x: -11.83, y: -8.47, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -871,7 +889,7 @@ Transform:
   m_GameObject: {fileID: 1007305122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -12.63, y: -4.7400002, z: 0.19489174}
+  m_LocalPosition: {x: -5.44, y: -3.18, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -902,139 +920,11 @@ Transform:
   m_GameObject: {fileID: 1519590635}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.91, y: -8.07, z: 0.19489174}
+  m_LocalPosition: {x: 11.91, y: -8.61, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 135940083}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1609392036
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1609392038}
-  - component: {fileID: 1609392037}
-  m_Layer: 0
-  m_Name: Audio Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &1609392037
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609392036}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6c9f1af028e853f429b41543bfe12033, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1609392038
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609392036}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.098148, y: 0.8943372, z: -0.08547311}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988044623
 GameObject:
@@ -1183,7 +1073,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
@@ -1241,8 +1131,8 @@ Transform:
   m_GameObject: {fileID: 1988044623}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.7, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -4.2622, z: -10}
+  m_LocalScale: {x: 1, y: 0.5125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1279,8 +1169,8 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.42}
-  m_EdgeRadius: 0.72
+  m_Offset: {x: 0, y: -0.9}
+  m_EdgeRadius: 0.67
   m_Points:
   - {x: -9.921315, y: 0.9339408}
   - {x: 0.6881514, y: 0.9861044}
@@ -1360,7 +1250,9 @@ MonoBehaviour:
   LeftEdge: -10
   TopEdge: 5
   BottomEdge: -5
-  SpawnControlPoint: {fileID: 1765448933198515150, guid: 8b5bbc461e05cf44085ac82a7e6f1723, type: 3}
+  SplineLeft: 9
+  SplineRight: -9
+  SpawnControlPoint: {fileID: 8425313385427660038, guid: 8b5bbc461e05cf44085ac82a7e6f1723, type: 3}
 --- !u!4 &2021063804
 Transform:
   m_ObjectHideFlags: 0
@@ -1516,7 +1408,7 @@ Transform:
   m_GameObject: {fileID: 2140783579}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.68, y: -4.74, z: 0.19489174}
+  m_LocalPosition: {x: 4.71, y: -3.28, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1531,7 +1423,6 @@ SceneRoots:
   - {fileID: 182007742}
   - {fileID: 184363359}
   - {fileID: 135940083}
-  - {fileID: 1609392038}
   - {fileID: 59708609}
   - {fileID: 1988044627}
   - {fileID: 2021063804}
