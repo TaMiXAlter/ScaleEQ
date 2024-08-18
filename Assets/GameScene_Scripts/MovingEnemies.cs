@@ -5,11 +5,14 @@ using UnityEngine;
 public class MovingEnemies : MonoBehaviour
 {
     public float MoveSpeed { get; set; }
-    private Rigidbody2D rigi;
-    [SerializeField] private float amplitude = 1.0f;
-    [SerializeField] private float frequency = 1.0f;
+    public float amplitude { get; set; }
+    public float frequency { get; set; }
 
-    private Vector2 targetPosition;
+    private Rigidbody2D rigi;
+    private Vector2 playerPosition;
+    private Vector2 lastDirection;
+    private bool targetReached = false;
+
     public enum MovementType
     {
         HorizontalMoving,
@@ -19,6 +22,8 @@ public class MovingEnemies : MonoBehaviour
     }
     public MovementType movementType;
 
+
+
     void Start()
     {
         rigi = GetComponent<Rigidbody2D>();
@@ -26,38 +31,54 @@ public class MovingEnemies : MonoBehaviour
     }
     void Update()
     {
-        float sineWave = Mathf.Sin(Time.time * frequency) * amplitude;
+        SetMovementType(movementType);
+        SinWaves();
+    }
+    private void MoveTowardsPlayer()
+    {
+        //============ Direction setting
+        if (!targetReached)
+        {
+            Vector2 direction = (playerPosition - (Vector2)transform.position).normalized;
 
+            if (Vector2.Distance(transform.position, playerPosition) < 0.1f)
+            {
+                targetReached = true;
+            }
+            else
+            {
+                lastDirection = direction;
+            }
+        }
+
+        //============ Angle setting
+        float angle = Mathf.Atan2(lastDirection.y, lastDirection.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0, 0, angle);
+
+        //============ Velocity setting
+        rigi.velocity = lastDirection * MoveSpeed;
+    }
+    private void SetMovementType(MovementType movementType)
+    {
         switch (movementType)
         {
             case MovementType.HorizontalMoving:
                 rigi.velocity = new Vector2(MoveSpeed, rigi.velocity.y);
                 break;
             case MovementType.WavesMoving:
-                rigi.velocity = new Vector2(MoveSpeed, sineWave);
+                rigi.velocity = new Vector2(MoveSpeed, SinWaves());
                 break;
             case MovementType.FacingPlayer:
                 MoveTowardsPlayer();
-            break;
+                break;
         }
-
-        
-
     }
-    public void SetTargetPosition(Vector2 playerPosition)
+    public void SetPlayerPosition(Vector2 playerPosition) //Count the player position when spawning
     {
-        targetPosition = playerPosition;
-
+        this.playerPosition = playerPosition;
     }
-    void MoveTowardsPlayer()
+    private float SinWaves() // Count the sin waves
     {
-
-        Vector2 direction = (targetPosition - (Vector2)transform.position).normalized;
-
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        transform.rotation = Quaternion.Euler(0, 0, angle);
-
-        rigi.velocity = direction * MoveSpeed;
+        return Mathf.Sin(Time.time * frequency) * amplitude;
     }
 }
