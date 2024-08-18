@@ -177,7 +177,9 @@ MonoBehaviour:
   LeftEdge: -9
   TopEdge: 5
   BottomEdge: -5
-  SpawnControlPoint: {fileID: 1765448933198515150, guid: 8b5bbc461e05cf44085ac82a7e6f1723, type: 3}
+  SplineLeft: 5.78
+  SplineRight: -5.44
+  SpawnControlPoint: {fileID: 8425313385427660038, guid: 8b5bbc461e05cf44085ac82a7e6f1723, type: 3}
 --- !u!114 &432337068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -663,7 +665,7 @@ MonoBehaviour:
   XKnotStartPoint: -8.84
   XSpaceing: 3
   YAduioModifier: 30
-  YControllerModifier: 3
+  YControllerModifier: 30
 --- !u!4 &1123595239
 Transform:
   m_ObjectHideFlags: 0
@@ -942,7 +944,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: c1da615f7e0a9f742887d8aee2578c52, type: 2}
   m_audioClip: {fileID: 8300000, guid: 4d872d8b172fb8b4e8f89db9ef112e46, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
