@@ -175,8 +175,8 @@ MonoBehaviour:
   - 0
   RightEdge: 9
   LeftEdge: -9
-  TopEdge: 10
-  BottomEdge: 0
+  TopEdge: 5
+  BottomEdge: -5
   SpawnControlPoint: {fileID: 1765448933198515150, guid: 8b5bbc461e05cf44085ac82a7e6f1723, type: 3}
 --- !u!114 &432337068
 MonoBehaviour:
@@ -473,7 +473,7 @@ Transform:
   m_GameObject: {fileID: 786169899}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.87, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -621,7 +621,7 @@ Transform:
   m_GameObject: {fileID: 789619101}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.7595794, y: 3.81, z: 0}
+  m_LocalPosition: {x: 2.79, y: 3.81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -637,7 +637,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1123595239}
   - component: {fileID: 1123595238}
-  - component: {fileID: 1123595237}
   - component: {fileID: 1123595241}
   - component: {fileID: 1123595240}
   - component: {fileID: 1123595242}
@@ -648,34 +647,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1123595237
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1123595236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dab5c7d4c32e743048dfca98e2d5914f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Spline:
-    m_EditModeType: 1
-    m_Knots: []
-    m_MetaData: []
-    m_Closed: 0
-    m_IntData:
-      m_Data: []
-    m_FloatData:
-      m_Data: []
-    m_Float4Data:
-      m_Data: []
-    m_ObjectData:
-      m_Data: []
-  m_Splines: []
-  m_Knots:
-    m_KnotsLink: []
 --- !u!114 &1123595238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -691,7 +662,8 @@ MonoBehaviour:
   eqController: {fileID: 432337067}
   XKnotStartPoint: -8.84
   XSpaceing: 3
-  YModifier: 30
+  YAduioModifier: 30
+  YControllerModifier: 3
 --- !u!4 &1123595239
 Transform:
   m_ObjectHideFlags: 0
@@ -701,7 +673,7 @@ Transform:
   m_GameObject: {fileID: 1123595236}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -5, z: 0}
+  m_LocalPosition: {x: 0, y: -6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -914,8 +886,8 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0.27
+  m_Offset: {x: 0, y: -0.78}
+  m_EdgeRadius: 1
   m_Points:
   - {x: 11.399148, y: 3.710949}
   - {x: 10.695432, y: 3.7322168}
@@ -969,11 +941,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: c1da615f7e0a9f742887d8aee2578c52, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 2b19da2178cd2b04098dc36a0d3f4ff4, type: 3}
-  m_PlayOnAwake: 1
+  m_audioClip: {fileID: 8300000, guid: 4d872d8b172fb8b4e8f89db9ef112e46, type: 3}
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
