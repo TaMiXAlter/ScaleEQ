@@ -10,7 +10,7 @@ public class SpawnObstacle
     public float MoveSpeed;
 
     [Header("Spawning Info")]
-    public int SpawnTime;
+    public float SpawnTime;
     public Transform SpawnPoint;
 
     [Header("sin waves settings")]
