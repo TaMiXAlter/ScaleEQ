@@ -6,9 +6,9 @@ using UnityEngine;
 public class AudioFrequency : MonoBehaviour
 {
     [SerializeField]
-    private float RiseModifier = 0.05f;
+    private float RiseModifier = 0.1f;
     [SerializeField]
-    private float DropModifier = -0.01f;
+    private float DropModifier = -0.1f;
     
     AudioSource _audioSource;
     private float[] _samples = new float[512];
