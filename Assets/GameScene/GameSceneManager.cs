@@ -90,6 +90,7 @@ public class GameSceneManager : MonoBehaviour
             {
 
                 GameObject obstacle = Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
+                Destroy(obstacle, 8);
 
                 GetObstacleInfo(obstacle, _spawnObstacles);
 
