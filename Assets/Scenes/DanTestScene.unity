@@ -164,7 +164,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: c1da615f7e0a9f742887d8aee2578c52, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 4d872d8b172fb8b4e8f89db9ef112e46, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 72dc6ca87e9b25847b724fb35d1a83bc, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -332,7 +332,7 @@ Transform:
   m_GameObject: {fileID: 182007738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1655, y: -0.4355, z: 0}
+  m_LocalPosition: {x: -0.23, y: 5.05, z: 0}
   m_LocalScale: {x: 0.689, y: 0.689, z: 0.689}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -527,93 +527,195 @@ MonoBehaviour:
   StartTheGame: 1
   SpawnObstacles:
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 1.5
+    MoveSpeed: -3
+    SpawnTime: 3.93
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 3.5
+    MoveSpeed: -3
+    SpawnTime: 7.86
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 5.4
+    MoveSpeed: -3
+    SpawnTime: 11.8
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 7.38
+    MoveSpeed: -3
+    SpawnTime: 13.77
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -3
+    SpawnTime: 15.73
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -3
+    SpawnTime: 17.7
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -5
-    SpawnTime: 8.3
-    SpawnPoint: {fileID: 477194382}
-    amplitude: 1
-    frequency: 1
+    SpawnTime: 19.67
+    SpawnPoint: {fileID: 1519590636}
+    amplitude: 1.5
+    frequency: 1.5
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 9
-    SpawnPoint: {fileID: 477194382}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 9.3
-    SpawnPoint: {fileID: 477194382}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 10.9
-    SpawnPoint: {fileID: 477194382}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 11.3
+    MoveSpeed: -3
+    SpawnTime: 21.63
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -5
-    SpawnTime: 11.6
+    SpawnTime: 23.6
+    SpawnPoint: {fileID: 1519590636}
+    amplitude: 1.5
+    frequency: 1.5
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -3
+    SpawnTime: 25.57
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -3
+    SpawnTime: 27.54
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 27.54
+    SpawnPoint: {fileID: 2140783580}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -3
+    SpawnTime: 29.5
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 29.5
+    SpawnPoint: {fileID: 2140783580}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -3
+    SpawnTime: 31.47
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 31.47
+    SpawnPoint: {fileID: 2140783580}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 33.44
+    SpawnPoint: {fileID: 2140783580}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -3
+    SpawnTime: 33.44
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 35.41
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -5
-    SpawnTime: 12.9
+    SpawnTime: 35.41
+    SpawnPoint: {fileID: 1519590636}
+    amplitude: 1.5
+    frequency: 1.5
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 37.37
+    SpawnPoint: {fileID: 2140783580}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 37.37
+    SpawnPoint: {fileID: 1519590636}
+    amplitude: 1.5
+    frequency: 1.5
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 39.34
+    SpawnPoint: {fileID: 1007305123}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 39.34
+    SpawnPoint: {fileID: 1519590636}
+    amplitude: 1.5
+    frequency: 1.5
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 41.31
+    SpawnPoint: {fileID: 2005701081}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 41.8
+    SpawnPoint: {fileID: 2140783580}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 42.29
+    SpawnPoint: {fileID: 1007305123}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -3
+    SpawnTime: 42.78
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 13.25
-    SpawnPoint: {fileID: 477194382}
+    MoveSpeed: 3
+    SpawnTime: 47.21
+    SpawnPoint: {fileID: 2005701081}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 14.06
-    SpawnPoint: {fileID: 477194382}
+    MoveSpeed: 3
+    SpawnTime: 51.14
+    SpawnPoint: {fileID: 2005701081}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 14.4
-    SpawnPoint: {fileID: 477194382}
+    MoveSpeed: 3
+    SpawnTime: 55.08
+    SpawnPoint: {fileID: 2005701081}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 14.4
-    SpawnPoint: {fileID: 477194382}
+    MoveSpeed: 3
+    SpawnTime: 57.04
+    SpawnPoint: {fileID: 2005701081}
     amplitude: 0
     frequency: 0
 --- !u!1 &477194381
@@ -827,7 +929,7 @@ Transform:
   m_GameObject: {fileID: 586870189}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -15}
+  m_LocalPosition: {x: 0, y: 1, z: -15.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -858,7 +960,7 @@ Transform:
   m_GameObject: {fileID: 982915420}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -11.83, y: -8.47, z: 0.19489174}
+  m_LocalPosition: {x: -9.61, y: -8.47, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -920,7 +1022,7 @@ Transform:
   m_GameObject: {fileID: 1519590635}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.91, y: -8.61, z: 0.19489174}
+  m_LocalPosition: {x: 9.53, y: -8.61, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -959,10 +1061,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eqController: {fileID: 2021063803}
+  TopEdge: 10
+  BottomEdge: -10
   XKnotStartPoint: -10
   XSpaceing: 3
-  YAduioModifier: 30
-  YControllerModifier: 3
+  YAduioModifier: 0.543
+  YControllerModifier: 0.516
 --- !u!114 &1988044625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1131,7 +1235,7 @@ Transform:
   m_GameObject: {fileID: 1988044623}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -4.2622, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 0.5125, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1242,10 +1346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa58059d151bb7647a81764fec3bd90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPointsValue:
-  - 0
-  - 0
-  - 0
   RightEdge: 10
   LeftEdge: -10
   TopEdge: 5
