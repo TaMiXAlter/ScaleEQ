@@ -190,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 182007738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: -3.46, z: 0}
+  m_LocalPosition: {x: -0.01, y: -0.28, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -325,9 +325,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.23829654, g: 0.8018868, b: 0.34067294, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -384,54 +384,78 @@ MonoBehaviour:
   Player: {fileID: 182007738}
   StartTheGame: 1
   SpawnObstacles:
-  - SpawnTime: 1
-    Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -5
+    SpawnTime: 1
     SpawnPoint: {fileID: 477194382}
-  - SpawnTime: 7
-    Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -5
+    SpawnTime: 7
     SpawnPoint: {fileID: 477194382}
-  - SpawnTime: 3
-    Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -5
+    SpawnTime: 3
     SpawnPoint: {fileID: 1519590636}
-  - SpawnTime: 9
-    Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    amplitude: 8
+    frequency: 2
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 5
+    SpawnTime: 9
     SpawnPoint: {fileID: 2005701081}
-  - SpawnTime: 10
-    Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: 5
+    SpawnTime: 10
     SpawnPoint: {fileID: 982915421}
-  - SpawnTime: 11
-    Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    amplitude: 8
+    frequency: 2
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
     MoveSpeed: 5
+    SpawnTime: 11
     SpawnPoint: {fileID: 2140783580}
-  - SpawnTime: 11
-    Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -6
+    SpawnTime: 11
     SpawnPoint: {fileID: 477194382}
-  - SpawnTime: 13
-    Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
     MoveSpeed: 5
+    SpawnTime: 13
     SpawnPoint: {fileID: 1007305123}
-  - SpawnTime: 13
-    Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -7
+    SpawnTime: 13
     SpawnPoint: {fileID: 1519590636}
-  - SpawnTime: 14
-    Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    amplitude: 8
+    frequency: 2
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -6
+    SpawnTime: 14
     SpawnPoint: {fileID: 477194382}
-  - SpawnTime: 14
-    Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: 7
+    SpawnTime: 14
     SpawnPoint: {fileID: 982915421}
-  - SpawnTime: 15
-    Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
     MoveSpeed: 6
+    SpawnTime: 15
     SpawnPoint: {fileID: 1007305123}
+    amplitude: 0
+    frequency: 0
 --- !u!1 &301752302
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,8 +484,8 @@ Transform:
   m_GameObject: {fileID: 301752302}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.6, z: 0}
-  m_LocalScale: {x: 39.87779, y: 11.58146, z: 1}
+  m_LocalPosition: {x: 0, y: -8, z: 0}
+  m_LocalScale: {x: 20, y: 10, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -498,7 +522,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.021350518}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -509,7 +533,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1, y: 0.957299}
   m_EdgeRadius: 0
 --- !u!212 &301752308
 SpriteRenderer:
@@ -600,7 +624,7 @@ Transform:
   m_GameObject: {fileID: 477194381}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.534084, y: -14, z: 0.19489174}
+  m_LocalPosition: {x: 9.47, y: -10.95, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -760,7 +784,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
@@ -786,7 +810,7 @@ Transform:
   m_GameObject: {fileID: 586870189}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.59, y: 1, z: -15.8}
+  m_LocalPosition: {x: 0, y: 1, z: -15.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -817,7 +841,7 @@ Transform:
   m_GameObject: {fileID: 982915420}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.17, y: -11.76, z: 0.19489174}
+  m_LocalPosition: {x: -7.35, y: -9.08, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -879,7 +903,7 @@ Transform:
   m_GameObject: {fileID: 1519590635}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.1, y: -11.93, z: 0.19489174}
+  m_LocalPosition: {x: 11.91, y: -8.07, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1038,7 +1062,7 @@ Transform:
   m_GameObject: {fileID: 2005701080}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -18.84, y: -14.12, z: 0.19489174}
+  m_LocalPosition: {x: -9.41, y: -11.03, z: 0.19489174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
