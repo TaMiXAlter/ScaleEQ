@@ -290,7 +290,7 @@ Transform:
   m_GameObject: {fileID: 135940082}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.045915246, y: 10.120278, z: -0.19489174}
+  m_LocalPosition: {x: 0.04591525, y: 10.12028, z: -0.1948917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -351,8 +351,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aa181abeca83b4ba2ff0e1b0111eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoveSpeed: 10
-  JumpHeight: 8
+  movement: {x: 0, y: 0}
+  maxSpeed: 10
+  SpeedDelta: 10
 --- !u!114 &182007746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -528,9 +529,27 @@ MonoBehaviour:
   StartTheGame: 1
   SpawnObstacles:
   - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
-    MoveSpeed: 0
+    MoveSpeed: -5
     SpawnTime: 1
     SpawnPoint: {fileID: 487682352}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 1
+    SpawnPoint: {fileID: 1519590636}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 3
+    SpawnPoint: {fileID: 1519590636}
+    amplitude: 3
+    frequency: 8
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 5
+    SpawnTime: 2
+    SpawnPoint: {fileID: 1519590636}
     amplitude: 0
     frequency: 0
 --- !u!1 &186095813
@@ -1198,7 +1217,7 @@ Transform:
   m_GameObject: {fileID: 750678606}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.5, y: 1.2, z: 0}
+  m_LocalPosition: {x: 7.5, y: 1.85, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1818,7 +1837,7 @@ Transform:
   m_GameObject: {fileID: 1519590635}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.91, y: -8.07, z: 0.19489174}
+  m_LocalPosition: {x: 11.91, y: -8.07, z: 0.1948917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2244,11 +2263,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c72091993cde3c4ab4d653f3f8113b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eqController: {fileID: 2021063803}
+  eqController: {fileID: 0}
   TopEdge: 10
   BottomEdge: -10
-  XKnotStartPoint: -10
-  XSpaceing: 3
+  RightEdge: 10
+  LeftEdge: -10
   YAduioModifier: 1
   YControllerModifier: 1
 --- !u!114 &1988044625
