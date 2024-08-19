@@ -70,8 +70,8 @@ public class SplineCreater : MonoBehaviour
         _spriteShapeController = GetComponent<SpriteShapeController>();
         float[] freqBand = AudioManager.Instance.GetAudioBuffer();
         for (int i = 0; i < freqBand.Length; i++) {
-            _spriteShapeController.spline.SetPosition(i,(new Vector3(GetKnotXPosition(i), 0, 0)));
-            _spriteShapeController.spline.SetTangentMode(i, ShapeTangentMode.Continuous);
+            _spriteShapeController.spline.SetPosition(i+1,(new Vector3(GetKnotXPosition(i), 0, 0)));
+            _spriteShapeController.spline.SetTangentMode(i+1, ShapeTangentMode.Continuous);
         }
     }
     void UpdateSpriteSpline()
@@ -85,7 +85,7 @@ public class SplineCreater : MonoBehaviour
             Vector3 targetPosition = new Vector3(GetKnotXPosition(i),UpdatePositionY, 0);
             //smoothing
             _currentPositions[i] = Vector3.Lerp(_currentPositions[i], targetPosition, Time.deltaTime);
-            _spriteShapeController.spline.SetPosition(i, _currentPositions[i]);
+            _spriteShapeController.spline.SetPosition(i+1, _currentPositions[i]);
         }
     }
 

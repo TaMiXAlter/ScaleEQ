@@ -15,10 +15,9 @@ public class EQ_ControlPoint_v2 : MonoBehaviour
     [SerializeField]
     private float RightEdge,LeftEdge,TopEdge,BottomEdge;
     
-    bool isDragging = false;
     Vector3 offset = Vector3.zero;
 
-    private void Start()
+    private void Awake()
     {
         Cursor.visible = true;
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
@@ -27,18 +26,12 @@ public class EQ_ControlPoint_v2 : MonoBehaviour
 
     private void Update()
     {
-        if(!isDragging) return;
        
-        Vector3 TargetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 ScreenPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 TargetPosition = new Vector3(ScreenPosition.x, ScreenPosition.y, -5f);
+
+        transform.position = TargetPosition;
         
-        if (TargetPosition.x < LeftEdge || TargetPosition.x > RightEdge
-             || TargetPosition.y < BottomEdge || TargetPosition.y > TopEdge) {
-            isDragging = false;
-            return;
-        }
-        
-        
-        transform.position = TargetPosition + offset;
                 
         ControlX = (transform.position.x - LeftEdge)/(RightEdge - LeftEdge);
         ControlY = (transform.position.y - BottomEdge)/(TopEdge - BottomEdge);
@@ -49,13 +42,5 @@ public class EQ_ControlPoint_v2 : MonoBehaviour
         
     }
 
-    private void OnMouseDown() {
-        isDragging = true;
-        offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
-    }
-
-    private void OnMouseUp()
-    {
-        isDragging = false;
-    }
+    
 }
