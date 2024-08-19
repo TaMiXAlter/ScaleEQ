@@ -117,6 +117,6 @@ public class SplineCreater : MonoBehaviour
         return ControlScale * eqController.ControlY * YControllerModifier;
     }
     float GetKnotXPosition(int index) {
-        return LeftEdge + index * (Width/8);
+        return LeftEdge + index * (Width/7);
     }
 }
