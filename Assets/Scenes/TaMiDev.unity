@@ -259,8 +259,8 @@ MonoBehaviour:
   ControlX: 0
   ControlY: 0
   Multiplier: 1
-  RightEdge: 10
-  LeftEdge: -10
+  RightEdge: 9
+  LeftEdge: -8
   TopEdge: 5
   BottomEdge: -5
 --- !u!1 &484039428
@@ -848,8 +848,8 @@ SpriteShapeRenderer:
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
   m_LocalAABB:
-    m_Center: {x: 1.5635204, y: 3.7978497, z: 0}
-    m_Extent: {x: 9.835628, y: 0.41815853, z: 0}
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
   m_SpriteSortPoint: 0
 --- !u!68 &1123595242
 EdgeCollider2D:
