@@ -15,7 +15,6 @@ public class ButtonPointer : MonoBehaviour, IPointerEnterHandler, IPointerExitHa
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
-
         Debug.Log("Enter");
     }
 

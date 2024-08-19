@@ -4,13 +4,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class Seesaw : MonoBehaviour
 {
 
     public float tiltAngle = 5f;
     public float tiltSpeed = 10f;
-    public float currentAngle { get; private set; }
+    private float currentAngle = 0f;
     private bool isTiltLeft = false;
     private bool isTiltRight = false;
 
@@ -25,17 +24,11 @@ public class Seesaw : MonoBehaviour
     private Quaternion initialOptionsRotation;
 
     public int nextScene;
-
-
-
-
-
-
+    
     void Start()
     {
         playButton.onClick.AddListener(ClickPlay);
         optionsButton.onClick.AddListener(ClickOptions);
-
 
         initialPlayPosition = playButton.transform.position;
         initialOptionsPosition = optionsButton.transform.position;
@@ -46,7 +39,7 @@ public class Seesaw : MonoBehaviour
 
     void Update()
     {
-        if (isTiltLeft)
+        if(isTiltLeft)
         {
             currentAngle = Mathf.Lerp(currentAngle, -tiltAngle, Time.deltaTime * tiltSpeed);
         }
@@ -54,7 +47,7 @@ public class Seesaw : MonoBehaviour
         {
             currentAngle = Mathf.Lerp(currentAngle, tiltAngle, Time.deltaTime * tiltSpeed);
         }
-        else
+        else 
         {
             currentAngle = Mathf.Lerp(currentAngle, 0f, Time.deltaTime * tiltSpeed);
         }
