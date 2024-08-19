@@ -9,10 +9,11 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rigi;
     [SerializeField]
     private Vector2 movement;
-    
-    [SerializeField] private float MoveSpeed;
-    
 
+    [SerializeField] private float maxSpeed = 10f;
+    [SerializeField] private float SpeedDelta = 10f;
+    
+    bool isKeyDown = false;
     void Start() {
         rigi = GetComponent<Rigidbody2D>();
     }
@@ -20,16 +21,28 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         if (Input.GetKey(KeyCode.A)) {
-            movement.x = -1;
-            rigi.AddForce(movement,ForceMode2D.Force);
+            isKeyDown = true;
+            if(movement.x > -maxSpeed) {
+                movement.x -= SpeedDelta*Time.deltaTime;
+            }
         }
        
-        if (Input.GetKey(KeyCode.D))
-        {
-            movement.x = 1;
-            rigi.AddForce(movement,ForceMode2D.Force);
+        if (Input.GetKey(KeyCode.D)) {
+            isKeyDown = true;
+            if(movement.x < maxSpeed) {
+                movement.x += SpeedDelta*Time.deltaTime;
+            }
         }
-        
-        movement.x = 0;
+
+        if (isKeyDown)
+        {
+            if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            {
+                rigi.AddForce(movement, ForceMode2D.Impulse);
+                movement.x = 0;
+                isKeyDown = false;
+            }
+        }
+       
     }
 }
