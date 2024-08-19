@@ -72,9 +72,9 @@ public class MovingEnemies : MonoBehaviour
                 AwarePlayer(direction);
                 break;
             case MovementType.WavesMoving:
-                rigi.velocity = new Vector2(Mathf.Sign(MoveSpeed), Mathf.Sign(SinWaves()));
+                rigi.velocity = new Vector2(MoveSpeed, SinWaves());
+                direction = new Vector2(Mathf.Sign(MoveSpeed), Mathf.Sign(SinWaves()));
                 AwarePlayer(direction);
-                direction = new Vector2(Mathf.Sign(MoveSpeed), 0);
                 break;
             case MovementType.FacingPlayer:
                 MoveTowardsPlayer();
