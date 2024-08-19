@@ -10,8 +10,9 @@ public class MovingEnemies : MonoBehaviour
 
     private Rigidbody2D rigi;
     private Vector2 playerPosition;
-    private Vector2 lastDirection;
+    public Vector2 lastDirection { get; private set; }
     private bool targetReached = false;
+    private bool AlreadyHit = false;
 
     public enum MovementType
     {
@@ -48,9 +49,10 @@ public class MovingEnemies : MonoBehaviour
             else
             {
                 lastDirection = direction;
+
             }
         }
-
+        AwarePlayer();
         //============ Angle setting
         float angle = Mathf.Atan2(lastDirection.y, lastDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -81,4 +83,38 @@ public class MovingEnemies : MonoBehaviour
     {
         return Mathf.Sin(Time.time * frequency) * amplitude;
     }
+
+    private void AwarePlayer()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, lastDirection, Mathf.Infinity, LayerMask.GetMask("aware"));
+
+        if (hit.collider != null)
+        {
+            SpriteRenderer spriteRenderer = hit.collider.gameObject.GetComponent<SpriteRenderer>();
+            if (spriteRenderer != null)
+            {
+                // Calculate the distance between the object and the hit point
+                float distance = Vector2.Distance(transform.position, hit.point);
+
+                // If the distance is less than 1, set alpha to 1; otherwise, set it to 0
+                if (distance < 1.5f)
+                {
+                    Color color = spriteRenderer.color;
+                    color.a = 0f;
+                    spriteRenderer.color = color;
+                }
+                else if (distance >= 1.5f && !AlreadyHit)
+                {
+                    Color color = spriteRenderer.color;
+                    color.a = 1f;
+                    spriteRenderer.color = color;
+                    AlreadyHit = true;
+                }
+            }
+        }
+    }
+
+
+
+
 }

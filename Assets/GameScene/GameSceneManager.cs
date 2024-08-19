@@ -10,7 +10,7 @@ public class SpawnObstacle
     public float MoveSpeed;
 
     [Header("Spawning Info")]
-    public int SpawnTime;
+    public float SpawnTime;
     public Transform SpawnPoint;
 
     [Header("sin waves settings")]
@@ -75,6 +75,11 @@ public class GameSceneManager : MonoBehaviour
         obs.GetComponent<MovingEnemies>().amplitude = spawnedObs.amplitude;
         obs.GetComponent<MovingEnemies>().frequency = spawnedObs.frequency;
         obs.GetComponent<MovingEnemies>().SetPlayerPosition(Player.transform.position);
+
+
+
+
+
         spawnedObs.hasSpawned = true;
     }
     private void SpawningObstacle()
@@ -85,9 +90,37 @@ public class GameSceneManager : MonoBehaviour
             {
 
                 GameObject obstacle = Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
+                Destroy(obstacle, 8);
+
                 GetObstacleInfo(obstacle, _spawnObstacles);
 
             }
         }
+
+
+
+
     }
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
