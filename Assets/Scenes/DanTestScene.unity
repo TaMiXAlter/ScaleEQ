@@ -439,7 +439,7 @@ Transform:
   m_GameObject: {fileID: 182007738}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 2.67, z: 0}
+  m_LocalPosition: {x: -2.62, y: 3.06, z: 0}
   m_LocalScale: {x: 0.6447, y: 0.6447, z: 0.6447}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -508,7 +508,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 182007738}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 7ec2606407922134aa65522a8de0c287, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -3191,10 +3191,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eqController: {fileID: 2021063807}
-  TopEdge: 10
-  BottomEdge: -10
-  RightEdge: 10
-  LeftEdge: -10
+  TopEdge: 6
+  BottomEdge: -5
+  RightEdge: 9
+  LeftEdge: -9
   YAduioModifier: 1
   YControllerModifier: 1
 --- !u!114 &1988044625
