@@ -17,25 +17,35 @@ public class EQ_ControlPoint_v2 : MonoBehaviour
     
     bool isDragging = false;
     Vector3 offset = Vector3.zero;
-    
+
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+        Cursor.lockState = CursorLockMode.Confined;
+    }
+
     private void Update()
     {
         if(!isDragging) return;
        
         Vector3 TargetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         
-        if (TargetPosition.x > LeftEdge && TargetPosition.x < RightEdge) {
-            if (TargetPosition.y > BottomEdge && TargetPosition.y < TopEdge) {
-                transform.position = TargetPosition + offset;
-                
-                ControlX = (transform.position.x - LeftEdge)/(RightEdge - LeftEdge);
-                ControlY = (transform.position.y - BottomEdge)/(TopEdge - BottomEdge);
-                //Audio Manager 
-                float gain = Mathf.Lerp(0,2,ControlY);
-                float freq = (Mathf.Pow(ControlX,2f)*40484f) + 20f;
-                AudioManager.Instance.SetEQ(freq,gain *Multiplier);
-            }
+        if (TargetPosition.x < LeftEdge || TargetPosition.x > RightEdge
+             || TargetPosition.y < BottomEdge || TargetPosition.y > TopEdge) {
+            isDragging = false;
+            return;
         }
+        
+        
+        transform.position = TargetPosition + offset;
+                
+        ControlX = (transform.position.x - LeftEdge)/(RightEdge - LeftEdge);
+        ControlY = (transform.position.y - BottomEdge)/(TopEdge - BottomEdge);
+        //Audio Manager 
+        float gain = Mathf.Lerp(0,2,ControlY);
+        float freq = (Mathf.Pow(ControlX,2f)*40484f) + 20f;
+        AudioManager.Instance.SetEQ(freq,gain *Multiplier);
         
     }
 
