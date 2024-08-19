@@ -53,6 +53,7 @@ public class GameSceneManager : MonoBehaviour
                     state = GameState.GameStart;
                 }
                 break;
+
             case GameState.GameStart:
 
                 Time.timeScale = 1;
@@ -69,41 +70,34 @@ public class GameSceneManager : MonoBehaviour
                 break;
         }
     }
-    private void GetObstacleInfo(GameObject obs, SpawnObstacle spawnedObs)
-    {
-        obs.GetComponent<MovingEnemies>().MoveSpeed = spawnedObs.MoveSpeed;
-        obs.GetComponent<MovingEnemies>().amplitude = spawnedObs.amplitude;
-        obs.GetComponent<MovingEnemies>().frequency = spawnedObs.frequency;
-        obs.GetComponent<MovingEnemies>().SetPlayerPosition(Player.transform.position);
-
-
-
-
-
-        spawnedObs.hasSpawned = true;
-    }
     private void SpawningObstacle()
     {
         foreach (SpawnObstacle _spawnObstacles in SpawnObstacles)
         {
             if (Timer >= _spawnObstacles.SpawnTime && !_spawnObstacles.hasSpawned)
             {
-
                 GameObject obstacle = Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
                 Destroy(obstacle, 8);
-
                 GetObstacleInfo(obstacle, _spawnObstacles);
 
             }
         }
-
-
-
-
     }
-
-
-
+    private void GetObstacleInfo(GameObject obs, SpawnObstacle spawnedObs)
+    {
+        if (obs.gameObject.tag == "RangeDamage")
+        {
+            obs.GetComponent<AwareScaleChange>().InitRangeDamage();
+        }
+        else
+        {
+            obs.GetComponent<MovingEnemies>().MoveSpeed = spawnedObs.MoveSpeed;
+            obs.GetComponent<MovingEnemies>().amplitude = spawnedObs.amplitude;
+            obs.GetComponent<MovingEnemies>().frequency = spawnedObs.frequency;
+            obs.GetComponent<MovingEnemies>().SetPlayerPosition(Player.transform.position);
+        }
+        spawnedObs.hasSpawned = true;
+    }
 }
 
 

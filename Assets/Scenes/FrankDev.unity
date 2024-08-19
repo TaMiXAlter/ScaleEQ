@@ -300,6 +300,7 @@ Transform:
   - {fileID: 2005701081}
   - {fileID: 982915421}
   - {fileID: 1007305123}
+  - {fileID: 487682352}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &182007738
@@ -364,7 +365,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad0e08ca552fec449e91445c54f06b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Init_PlayerHealth: 2
+  Init_PlayerHealth: 10000
 --- !u!50 &182007747
 Rigidbody2D:
   serializedVersion: 4
@@ -526,76 +527,10 @@ MonoBehaviour:
   Player: {fileID: 182007738}
   StartTheGame: 1
   SpawnObstacles:
-  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
-    MoveSpeed: 5
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
     SpawnTime: 1
-    SpawnPoint: {fileID: 477194382}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 7
-    SpawnPoint: {fileID: 477194382}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 3
-    SpawnPoint: {fileID: 1519590636}
-    amplitude: 8
-    frequency: 2
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: 5
-    SpawnTime: 9
-    SpawnPoint: {fileID: 2005701081}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: 5
-    SpawnTime: 10
-    SpawnPoint: {fileID: 982915421}
-    amplitude: 8
-    frequency: 2
-  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
-    MoveSpeed: 5
-    SpawnTime: 11
-    SpawnPoint: {fileID: 2140783580}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -6
-    SpawnTime: 11
-    SpawnPoint: {fileID: 477194382}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
-    MoveSpeed: 5
-    SpawnTime: 13
-    SpawnPoint: {fileID: 1007305123}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -7
-    SpawnTime: 13
-    SpawnPoint: {fileID: 1519590636}
-    amplitude: 8
-    frequency: 2
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -6
-    SpawnTime: 14
-    SpawnPoint: {fileID: 477194382}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: 7
-    SpawnTime: 14
-    SpawnPoint: {fileID: 982915421}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
-    MoveSpeed: 6
-    SpawnTime: 15
-    SpawnPoint: {fileID: 1007305123}
+    SpawnPoint: {fileID: 487682352}
     amplitude: 0
     frequency: 0
 --- !u!1 &186095813
@@ -754,6 +689,37 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 9.47, y: 1.37, z: 0.19489174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 135940083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &487682351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 487682352}
+  m_Layer: 0
+  m_Name: SpawnPoint(LeftTop) (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &487682352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487682351}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.33, y: -12.74, z: 0.1948917}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2395,7 +2361,7 @@ SpriteShapeRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
