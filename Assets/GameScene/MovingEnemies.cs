@@ -14,6 +14,8 @@ public class MovingEnemies : MonoBehaviour
     private bool targetReached = false;
     private bool AlreadyHit = false;
 
+    private Vector2 direction;
+
     public enum MovementType
     {
         HorizontalMoving,
@@ -52,7 +54,7 @@ public class MovingEnemies : MonoBehaviour
 
             }
         }
-        AwarePlayer();
+
         //============ Angle setting
         float angle = Mathf.Atan2(lastDirection.y, lastDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, angle);
@@ -66,12 +68,17 @@ public class MovingEnemies : MonoBehaviour
         {
             case MovementType.HorizontalMoving:
                 rigi.velocity = new Vector2(MoveSpeed, rigi.velocity.y);
+                direction = new Vector2(Mathf.Sign(MoveSpeed), 0);
+                AwarePlayer(direction);
                 break;
             case MovementType.WavesMoving:
-                rigi.velocity = new Vector2(MoveSpeed, SinWaves());
+                rigi.velocity = new Vector2(Mathf.Sign(MoveSpeed), Mathf.Sign(SinWaves()));
+                AwarePlayer(direction);
+                direction = new Vector2(Mathf.Sign(MoveSpeed), 0);
                 break;
             case MovementType.FacingPlayer:
                 MoveTowardsPlayer();
+                AwarePlayer(lastDirection);
                 break;
         }
     }
@@ -84,19 +91,16 @@ public class MovingEnemies : MonoBehaviour
         return Mathf.Sin(Time.time * frequency) * amplitude;
     }
 
-    private void AwarePlayer()
+    private void AwarePlayer(Vector2 direction)
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, lastDirection, Mathf.Infinity, LayerMask.GetMask("aware"));
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, Mathf.Infinity, LayerMask.GetMask("aware"));
 
         if (hit.collider != null)
         {
             SpriteRenderer spriteRenderer = hit.collider.gameObject.GetComponent<SpriteRenderer>();
             if (spriteRenderer != null)
             {
-                // Calculate the distance between the object and the hit point
                 float distance = Vector2.Distance(transform.position, hit.point);
-
-                // If the distance is less than 1, set alpha to 1; otherwise, set it to 0
                 if (distance < 1.5f)
                 {
                     Color color = spriteRenderer.color;
