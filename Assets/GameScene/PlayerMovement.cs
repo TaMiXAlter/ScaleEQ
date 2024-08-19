@@ -13,8 +13,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float MoveSpeed;
     
 
-    void Start()
-    {
+    void Start() {
         rigi = GetComponent<Rigidbody2D>();
     }
 
@@ -22,19 +21,15 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.A)) {
             movement.x = -1;
+            rigi.AddForce(movement,ForceMode2D.Force);
         }
-        else
+       
+        if (Input.GetKey(KeyCode.D))
         {
-            if (Input.GetKey(KeyCode.D))
-            {
-                movement.x = 1;
-            }
-            else
-            {
-                movement.x = 0;
-            }
+            movement.x = 1;
+            rigi.AddForce(movement,ForceMode2D.Force);
         }
-
-        rigi.AddForce(movement,ForceMode2D.Force);
+        
+        movement.x = 0;
     }
 }
