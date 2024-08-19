@@ -1,25 +1,40 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
     private Rigidbody2D rigi;
+    [SerializeField]
+    private Vector2 movement;
+    
     [SerializeField] private float MoveSpeed;
-    [SerializeField] private float JumpHeight;
+    
 
     void Start()
     {
         rigi = GetComponent<Rigidbody2D>();
     }
 
-    void Update()
+    private void Update()
     {
-        rigi.velocity = new Vector2(Input.GetAxis("Horizontal") * MoveSpeed, rigi.velocity.y);
-
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            rigi.velocity = new Vector2(rigi.velocity.x, JumpHeight);
+        if (Input.GetKey(KeyCode.A)) {
+            movement.x = -1;
         }
+        else
+        {
+            if (Input.GetKey(KeyCode.D))
+            {
+                movement.x = 1;
+            }
+            else
+            {
+                movement.x = 0;
+            }
+        }
+
+        rigi.AddForce(movement,ForceMode2D.Force);
     }
 }
