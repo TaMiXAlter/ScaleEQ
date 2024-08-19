@@ -1,4 +1,4 @@
-﻿fileFormatVersion: 2
+fileFormatVersion: 2
 guid: be8eedec4add7144baa87481ce9dec5b
 TextureImporter:
   internalIDToNameTable: []
@@ -131,4 +131,10 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextu
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
