@@ -5,6 +5,7 @@ using UnityEngine;
 public class MovingEnemies : MonoBehaviour
 {
     public float MoveSpeed { get; set; }
+
     public float amplitude { get; set; }
     public float frequency { get; set; }
 
@@ -16,9 +17,11 @@ public class MovingEnemies : MonoBehaviour
 
     private Vector2 direction;
 
+
     public enum MovementType
     {
         HorizontalMoving,
+        VerticalMoving,
         WavesMoving,
         FacingPlayer
 
@@ -71,9 +74,15 @@ public class MovingEnemies : MonoBehaviour
                 direction = new Vector2(Mathf.Sign(MoveSpeed), 0);
                 AwarePlayer(direction);
                 break;
+            case MovementType.VerticalMoving:
+                transform.rotation = Quaternion.Euler(0, 0, 90);
+                rigi.velocity = new Vector2(0, MoveSpeed);
+                direction = new Vector2(0, Mathf.Sign(MoveSpeed));
+                AwarePlayer(direction);
+                break;
             case MovementType.WavesMoving:
-                rigi.velocity = new Vector2(MoveSpeed, SinWaves());
-                direction = new Vector2(Mathf.Sign(MoveSpeed), Mathf.Sign(SinWaves()));
+                StartCoroutine(WaveMoveRoute());
+                direction = new Vector2(Mathf.Sign(MoveSpeed), rigi.velocity.y);
                 AwarePlayer(direction);
                 break;
             case MovementType.FacingPlayer:
@@ -81,6 +90,13 @@ public class MovingEnemies : MonoBehaviour
                 AwarePlayer(lastDirection);
                 break;
         }
+    }
+    private IEnumerator WaveMoveRoute()
+    {
+        rigi.velocity = new Vector2(MoveSpeed, rigi.velocity.y);
+        yield return new WaitForSeconds(0.5f);
+        rigi.velocity = new Vector2(MoveSpeed, SinWaves());
+
     }
     public void SetPlayerPosition(Vector2 playerPosition) //Count the player position when spawning
     {
