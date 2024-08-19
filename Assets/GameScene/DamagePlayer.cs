@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamagePlayer : MonoBehaviour
 {
-    [SerializeField] private int Damage;
+    [SerializeField] protected int Damage;
 
     void OnCollisionEnter2D(Collision2D other)
     {
@@ -14,5 +14,6 @@ public class DamagePlayer : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
 
 }
