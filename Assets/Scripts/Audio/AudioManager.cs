@@ -34,7 +34,8 @@ public class AudioManager : MonoBehaviour
        return audioFrequency._bandBuffer;
     }
 
-    public void SetEQ(String name, float gain) {
-        MasterMixer.SetFloat(name, gain);
+    public void SetEQ(float freq, float gain) {
+        MasterMixer.SetFloat("Gain", gain);
+        MasterMixer.SetFloat("Freq", freq);
     }
 }

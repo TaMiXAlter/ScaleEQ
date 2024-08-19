@@ -25,19 +25,19 @@ public class SplineCreater : MonoBehaviour
     #endregion
 
     [SerializeField]
-    private EQController eqController;
+    private EQ_ControlPoint_v2 eqController;
     
     [Header("Edge")]
     [SerializeField]
-    private float TopEdge = 10f;
+    private float TopEdge = 5f;
     [SerializeField]
-    private float BottomEdge = -10f;
+    private float BottomEdge = -5f;
+    [SerializeField]
+    private float RightEdge = 10f;
+    [SerializeField]
+    private float LeftEdge = -10f;
     
-    [Header("Spline")]
-    [SerializeField] 
-    private float XKnotStartPoint ;
-    [SerializeField]
-    private float XSpaceing ;
+    private float Width,Height;
     
     [Header("Modifier")]
     [SerializeField][Range(0,1f)]
@@ -51,7 +51,11 @@ public class SplineCreater : MonoBehaviour
     
     
     private void Awake() => instance = this;
-    private void Start() {
+    private void Start()
+    {
+        Width = RightEdge - LeftEdge;
+        Height = TopEdge - BottomEdge;
+        
         InitSpriteSpline();
         if(!eqController) Debug.LogError("eqController is null");
         UpdateSpriteSpline();
@@ -74,38 +78,45 @@ public class SplineCreater : MonoBehaviour
     {
         float[] freqBand = AudioManager.Instance.GetAudioBuffer();
         for (int i = 0; i < freqBand.Length; i++) {
-            float Control = freqBand[i] *YAduioModifier + GetEQMultiplyer(i) * YControllerModifier;
-
-            float UpdatePositionY = Mathf.Lerp(BottomEdge,TopEdge, Control);
+            float AudioBuffer = freqBand[i] *YAduioModifier;
             
-            Vector3 targetPosition = new Vector3(GetKnotXPosition(i), UpdatePositionY, 0);
+            float UpdatePositionY = Mathf.Lerp(BottomEdge,TopEdge, AudioBuffer+GetControllerBuffer(i));
+            
+            Vector3 targetPosition = new Vector3(GetKnotXPosition(i),UpdatePositionY, 0);
             //smoothing
             _currentPositions[i] = Vector3.Lerp(_currentPositions[i], targetPosition, Time.deltaTime);
             _spriteShapeController.spline.SetPosition(i, _currentPositions[i]);
         }
     }
 
-    float GetEQMultiplyer(int index)
+    // float GetEQMultiplyer(int index)
+    // {
+     //Old
+     // float G2Scale = ((-1f / 12f) * Mathf.Pow(index, 2) + (7f / 12f) * index);
+     // float G1Scale = 0,G3Scale = 0 ;
+     // if (index < 3.5) {
+     //     G1Scale = 1 - G2Scale;
+     //     G3Scale = 0;
+     // }
+     // if (index > 3.5) {
+     //     G3Scale = 1 - G2Scale;
+     //     G1Scale = 0 ;
+     // }
+     //
+     // float G1 = G1Scale  * eqController.controlPointsValue[0];
+     // float G2 = G2Scale * eqController.controlPointsValue[1] ;
+     // float G3 = G3Scale  * eqController.controlPointsValue[2];
+     // float value = G1 + G2 + G3 ;
+    //     return value;
+    // }
+
+
+    float GetControllerBuffer(int index)
     {
-        float G2Scale = ((-1f / 12f) * Mathf.Pow(index, 2) + (7f / 12f) * index);
-        float G1Scale = 0,G3Scale = 0 ;
-        if (index < 3.5) {
-            G1Scale = 1 - G2Scale;
-            G3Scale = 0;
-        }
-        if (index > 3.5) {
-            G3Scale = 1 - G2Scale;
-            G1Scale = 0 ;
-        }
-        
-        float G1 = G1Scale  * eqController.controlPointsValue[0];
-        float G2 = G2Scale * eqController.controlPointsValue[1] ;
-        float G3 = G3Scale  * eqController.controlPointsValue[2];
-        float value = G1 + G2 + G3 ;
-        return value;
+        float ControlScale = 1- Mathf.Abs((index/7f) - eqController.ControlX);
+        return ControlScale * eqController.ControlY * YControllerModifier;
     }
-    
     float GetKnotXPosition(int index) {
-        return XKnotStartPoint + index * XSpaceing;
+        return LeftEdge + index * (Width/8);
     }
 }
