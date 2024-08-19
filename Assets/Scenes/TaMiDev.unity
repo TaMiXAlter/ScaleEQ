@@ -152,8 +152,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -6.817}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 4.12, y: 4.12, z: 4.12}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -654,13 +654,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c72091993cde3c4ab4d653f3f8113b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eqController: {fileID: 0}
-  TopEdge: 10
-  BottomEdge: -10
-  XKnotStartPoint: -8.84
-  XSpaceing: 3
-  YAduioModifier: 0.508
-  YControllerModifier: 0.52
+  eqController: {fileID: 432337069}
+  TopEdge: 5
+  BottomEdge: -5
+  RightEdge: 10
+  LeftEdge: -10
+  YAduioModifier: 0.723
+  YControllerModifier: 0.718
 --- !u!4 &1123595239
 Transform:
   m_ObjectHideFlags: 0

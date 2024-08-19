@@ -20,25 +20,21 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) {
+        if (Input.GetKey(KeyCode.A)) {
             movement.x = -1;
         }
-        else{
-            if (Input.GetKeyDown(KeyCode.D)) {
+        else
+        {
+            if (Input.GetKey(KeyCode.D))
+            {
                 movement.x = 1;
             }
-            else {
+            else
+            {
                 movement.x = 0;
             }
         }
-        
-        if (Input.GetKeyDown(KeyCode.W)) movement.y = 1;
-        else{ 
-            if (Input.GetKeyDown(KeyCode.S)) movement.y = -1;
-        else movement.y = 0;
-            
-        }
-        
+
         rigi.AddForce(movement,ForceMode2D.Force);
     }
 }

@@ -2,11 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net.Http.Headers;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class EQ_ControlPoint_v2 : MonoBehaviour
 {
-    public float ControlX,ControlY;
+    public float ControlX = 0.5f;
+    public float ControlY = 0.5f;
     [SerializeField]
     private float Multiplier = 1;
     
@@ -26,10 +28,12 @@ public class EQ_ControlPoint_v2 : MonoBehaviour
             if (TargetPosition.y > BottomEdge && TargetPosition.y < TopEdge) {
                 transform.position = TargetPosition + offset;
                 
-                ControlX = Mathf.Lerp(LeftEdge,RightEdge,transform.position.x);
-                ControlY = Mathf.Lerp(BottomEdge,TopEdge,transform.position.y);
-                //Audio Manager
-                AudioManager.Instance.SetEQ(ControlX,ControlY *Multiplier);
+                ControlX = (transform.position.x - LeftEdge)/(RightEdge - LeftEdge);
+                ControlY = (transform.position.y - BottomEdge)/(TopEdge - BottomEdge);
+                //Audio Manager 
+                float gain = Mathf.Lerp(0,2,ControlY);
+                float freq = (Mathf.Pow(ControlX,2f)*40484f) + 20f;
+                AudioManager.Instance.SetEQ(freq,gain *Multiplier);
             }
         }
         
@@ -38,5 +42,10 @@ public class EQ_ControlPoint_v2 : MonoBehaviour
     private void OnMouseDown() {
         isDragging = true;
         offset = transform.position - Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
+
+    private void OnMouseUp()
+    {
+        isDragging = false;
     }
 }

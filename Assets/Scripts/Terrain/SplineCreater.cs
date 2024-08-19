@@ -29,15 +29,15 @@ public class SplineCreater : MonoBehaviour
     
     [Header("Edge")]
     [SerializeField]
-    private float TopEdge = 10f;
+    private float TopEdge = 5f;
     [SerializeField]
-    private float BottomEdge = -10f;
+    private float BottomEdge = -5f;
+    [SerializeField]
+    private float RightEdge = 10f;
+    [SerializeField]
+    private float LeftEdge = -10f;
     
-    [Header("Spline")]
-    [SerializeField] 
-    private float XKnotStartPoint ;
-    [SerializeField]
-    private float XSpaceing ;
+    private float Width,Height;
     
     [Header("Modifier")]
     [SerializeField][Range(0,1f)]
@@ -51,7 +51,11 @@ public class SplineCreater : MonoBehaviour
     
     
     private void Awake() => instance = this;
-    private void Start() {
+    private void Start()
+    {
+        Width = RightEdge - LeftEdge;
+        Height = TopEdge - BottomEdge;
+        
         InitSpriteSpline();
         if(!eqController) Debug.LogError("eqController is null");
         UpdateSpriteSpline();
@@ -74,12 +78,11 @@ public class SplineCreater : MonoBehaviour
     {
         float[] freqBand = AudioManager.Instance.GetAudioBuffer();
         for (int i = 0; i < freqBand.Length; i++) {
-            //todo: Change By Control
-            float Control = freqBand[i] *YAduioModifier;
-
-            float UpdatePositionY = Mathf.Lerp(BottomEdge,TopEdge, Control);
+            float AudioBuffer = freqBand[i] *YAduioModifier;
             
-            Vector3 targetPosition = new Vector3(GetKnotXPosition(i), UpdatePositionY, 0);
+            float UpdatePositionY = Mathf.Lerp(BottomEdge,TopEdge, AudioBuffer+GetControllerBuffer(i));
+            
+            Vector3 targetPosition = new Vector3(GetKnotXPosition(i),UpdatePositionY, 0);
             //smoothing
             _currentPositions[i] = Vector3.Lerp(_currentPositions[i], targetPosition, Time.deltaTime);
             _spriteShapeController.spline.SetPosition(i, _currentPositions[i]);
@@ -106,8 +109,14 @@ public class SplineCreater : MonoBehaviour
      // float value = G1 + G2 + G3 ;
     //     return value;
     // }
-    
+
+
+    float GetControllerBuffer(int index)
+    {
+        float ControlScale = 1- Mathf.Abs((index/7f) - eqController.ControlX);
+        return ControlScale * eqController.ControlY * YControllerModifier;
+    }
     float GetKnotXPosition(int index) {
-        return XKnotStartPoint + index * XSpaceing;
+        return LeftEdge + index * (Width/8);
     }
 }
