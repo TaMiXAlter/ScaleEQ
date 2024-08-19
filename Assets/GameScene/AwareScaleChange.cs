@@ -28,8 +28,9 @@ public class AwareScaleChange : MonoBehaviour
             yield return null;
         }
         transform.localScale = new Vector3(MaxScale, MaxScale, MaxScale);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.2f);
         Destroy(gameObject, 3);
         FireWork.SetActive(true);
+        
     }
 }
