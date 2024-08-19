@@ -7,6 +7,9 @@ public class AwareScaleChange : MonoBehaviour
     public float MaxScale = 2f;
     public float scaleCangeDuration = 0f;
 
+    public float ChangeToFireWorkTime = 0f;
+    public float FireWorkLifeTime = 0f;
+
     public GameObject FireWork;
     public void InitRangeDamage()
     {
@@ -28,9 +31,10 @@ public class AwareScaleChange : MonoBehaviour
             yield return null;
         }
         transform.localScale = new Vector3(MaxScale, MaxScale, MaxScale);
-        yield return new WaitForSeconds(0.2f);
-        Destroy(gameObject, 3);
+        yield return new WaitForSeconds(ChangeToFireWorkTime);
         FireWork.SetActive(true);
-        
+        yield return new WaitForSeconds(FireWorkLifeTime);
+        Destroy(gameObject);
+
     }
 }

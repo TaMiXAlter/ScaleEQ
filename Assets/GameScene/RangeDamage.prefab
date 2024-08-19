@@ -136,6 +136,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxScale: 2
   scaleCangeDuration: 1
+  ChangeToFireWorkTime: 0.2
+  FireWorkLifeTime: 0.5
   FireWork: {fileID: 9032182536079287054}
 --- !u!1 &9032182536079287054
 GameObject:
