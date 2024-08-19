@@ -25,7 +25,7 @@ public class SplineCreater : MonoBehaviour
     #endregion
 
     [SerializeField]
-    private EQController eqController;
+    private EQ_ControlPoint_v2 eqController;
     
     [Header("Edge")]
     [SerializeField]
@@ -74,7 +74,8 @@ public class SplineCreater : MonoBehaviour
     {
         float[] freqBand = AudioManager.Instance.GetAudioBuffer();
         for (int i = 0; i < freqBand.Length; i++) {
-            float Control = freqBand[i] *YAduioModifier + GetEQMultiplyer(i) * YControllerModifier;
+            //todo: Change By Control
+            float Control = freqBand[i] *YAduioModifier;
 
             float UpdatePositionY = Mathf.Lerp(BottomEdge,TopEdge, Control);
             
@@ -85,25 +86,26 @@ public class SplineCreater : MonoBehaviour
         }
     }
 
-    float GetEQMultiplyer(int index)
-    {
-        float G2Scale = ((-1f / 12f) * Mathf.Pow(index, 2) + (7f / 12f) * index);
-        float G1Scale = 0,G3Scale = 0 ;
-        if (index < 3.5) {
-            G1Scale = 1 - G2Scale;
-            G3Scale = 0;
-        }
-        if (index > 3.5) {
-            G3Scale = 1 - G2Scale;
-            G1Scale = 0 ;
-        }
-        
-        float G1 = G1Scale  * eqController.controlPointsValue[0];
-        float G2 = G2Scale * eqController.controlPointsValue[1] ;
-        float G3 = G3Scale  * eqController.controlPointsValue[2];
-        float value = G1 + G2 + G3 ;
-        return value;
-    }
+    // float GetEQMultiplyer(int index)
+    // {
+     //Old
+     // float G2Scale = ((-1f / 12f) * Mathf.Pow(index, 2) + (7f / 12f) * index);
+     // float G1Scale = 0,G3Scale = 0 ;
+     // if (index < 3.5) {
+     //     G1Scale = 1 - G2Scale;
+     //     G3Scale = 0;
+     // }
+     // if (index > 3.5) {
+     //     G3Scale = 1 - G2Scale;
+     //     G1Scale = 0 ;
+     // }
+     //
+     // float G1 = G1Scale  * eqController.controlPointsValue[0];
+     // float G2 = G2Scale * eqController.controlPointsValue[1] ;
+     // float G3 = G3Scale  * eqController.controlPointsValue[2];
+     // float value = G1 + G2 + G3 ;
+    //     return value;
+    // }
     
     float GetKnotXPosition(int index) {
         return XKnotStartPoint + index * XSpaceing;

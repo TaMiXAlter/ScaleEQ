@@ -350,8 +350,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8aa181abeca83b4ba2ff0e1b0111eb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movement: {x: 0, y: 0}
   MoveSpeed: 10
-  JumpHeight: 8
 --- !u!114 &182007746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1069,10 +1069,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eqController: {fileID: 2021063803}
+  TopEdge: 10
+  BottomEdge: -10
   XKnotStartPoint: -10
   XSpaceing: 3
-  YAduioModifier: 30
-  YControllerModifier: 3
+  YAduioModifier: 1
+  YControllerModifier: 1
 --- !u!114 &1988044625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1352,15 +1354,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa58059d151bb7647a81764fec3bd90c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlPointsValue:
-  - 0
-  - 0
-  - 0
   RightEdge: 10
   LeftEdge: -10
   TopEdge: 5
   BottomEdge: -5
-  SpawnControlPoint: {fileID: 1765448933198515150, guid: 8b5bbc461e05cf44085ac82a7e6f1723, type: 3}
+  SplineLeft: 0
+  SplineRight: 0
+  SpawnControlPoint: {fileID: 0}
 --- !u!4 &2021063804
 Transform:
   m_ObjectHideFlags: 0

@@ -31,9 +31,9 @@ public class EQController : MonoBehaviour
     }
 
     void Start() {
-        TrySpawnControlPoint(this.MoveControlPoint1,SplineRight,0);
+        TrySpawnControlPoint(this.MoveControlPoint1,SplineLeft,0);
         TrySpawnControlPoint(this.MoveControlPoint2,(SplineRight+SplineLeft)/2,1);
-        TrySpawnControlPoint(this.MoveControlPoint3,SplineLeft,2);
+        TrySpawnControlPoint(this.MoveControlPoint3,SplineRight,2);
     }
 
     void TrySpawnControlPoint(UnityAction<Vector3> DragEvent,float InitPosition,int index) {
@@ -52,19 +52,19 @@ public class EQController : MonoBehaviour
         _spriteShapeController.spline.SetPosition(0, postion);
         float gain = Mathf.Lerp(0, 1,   (postion.y-BottomEdge)/Height);
         controlPointsValue[0] = gain;
-        AudioManager.Instance.SetEQ("Gain1",gain*2);
+        // AudioManager.Instance.SetEQ("Gain1",gain*2);
     }
     private void MoveControlPoint2(Vector3 postion) {
         _spriteShapeController.spline.SetPosition(1, postion);
         float gain = Mathf.Lerp(0, 1,   (postion.y-BottomEdge)/Height);
         controlPointsValue[1] = gain;
-        AudioManager.Instance.SetEQ("Gain2",gain*2);
+        // AudioManager.Instance.SetEQ("Gain2",gain*2);
     }
     private void MoveControlPoint3(Vector3 postion) {
         _spriteShapeController.spline.SetPosition(2, postion);
         float gain = Mathf.Lerp(0, 1,   (postion.y-BottomEdge)/Height);
         controlPointsValue[2] = gain;
-        AudioManager.Instance.SetEQ("Gain3",gain*2);
+        // AudioManager.Instance.SetEQ("Gain3",gain*2);
     }
     
 }
