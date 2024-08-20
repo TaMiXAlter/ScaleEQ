@@ -18,7 +18,7 @@ public class SpawnObstacle
     public float amplitude = 0f;
     public float frequency = 0f;
     [SerializeField] public bool hasSpawned { get; set; }
-
+    
 }
 public class GameSceneManager : MonoBehaviour
 {
@@ -44,25 +44,30 @@ public class GameSceneManager : MonoBehaviour
         WaitForStart,
         GameStart,
         GameOver,
-        GamePause
-    }
+        GamePause,
+        Winning }
     [SerializeField] private GameObject Player;
     [SerializeField] private bool StartTheGame = false;
     [SerializeField] private SpawnObstacle[] SpawnObstacles;
     [SerializeField] private float SpawnDelayDelta = 0f;
     
-    private float Timer = 0;
-    private GameState state;
-
-    public EventHandler startGameHandler;
-
+    public float StartTime = 0f;
+    public float Timer = 0;
+    public GameState state;
+    
+    int SpawnCount = 0;
+    private bool ReadyToFinish = false;
+    
+    private GamePlayUI _gamePlayUI;
     private void Awake() => instance = this;
     void Start()
     {
         state = GameState.WaitForStart; // Initial state
+        _gamePlayUI = transform.Find("GamePlayUI").GetComponent<GamePlayUI>();
     }
     void Update()
     {
+        
         GameStateDetect();
         SpawningObstacle();
     }
@@ -71,39 +76,63 @@ public class GameSceneManager : MonoBehaviour
         switch (state)
         {
             case GameState.WaitForStart:
-
                 Time.timeScale = 0;
                 if (StartTheGame)
                 {
                     state = GameState.GameStart;
-                    startGameHandler?.Invoke(this, EventArgs.Empty);
+                    StartTime = Time.time;
+                    AudioManager.Instance.TogglePlay(true);
                 }
                 break;
 
             case GameState.GameStart:
                 Time.timeScale = 1;
-                Timer = Time.time;
+                
                 if (Player.GetComponent<PlayerHealth>().IfPlayerDead()) {
                     state = GameState.GameOver;
+                    Time.timeScale = 0;
+                    AudioManager.Instance.TogglePlay(false);
+                    _gamePlayUI.ShowGameOverView();
+                }
+                if (Input.GetKeyDown(KeyCode.Escape)) {
+                    state = GameState.GamePause;
+                    AudioManager.Instance.TogglePlay(false);
+                    _gamePlayUI.ShowPauseView();
+                }
+                if (SpawnCount != SpawnObstacles.Length) {
+                    Timer = Time.time;
+                    ReadyToFinish = true;
+                }
+
+                if (ReadyToFinish && Time.time - Timer > 9f)
+                {
+                    state = GameState.Winning;
+                    Time.timeScale = 0;
+                    _gamePlayUI.ShowWinView(Player.GetComponent<PlayerHealth>().Current_PlayerHealth);
                 }
                 break;
-            case GameState.GameOver:
-
-                Timer = 0;
+            case GameState.GamePause:
                 Time.timeScale = 0;
+                if (Input.GetKeyDown(KeyCode.Escape))
+                {
+                    AudioManager.Instance.TogglePlay(true);
+                    state = GameState.GameStart;
+                    _gamePlayUI.HidePauseView();
+                }
                 break;
+            
         }
     }
     private void SpawningObstacle()
     {
         foreach (SpawnObstacle _spawnObstacles in SpawnObstacles)
         {
-            if (Timer >= _spawnObstacles.SpawnTime+SpawnDelayDelta && !_spawnObstacles.hasSpawned)
+            if ((Timer - StartTime) >= _spawnObstacles.SpawnTime+SpawnDelayDelta && !_spawnObstacles.hasSpawned)
             {
                 GameObject obstacle = Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
-                _spawnObstacles.hasSpawned = true;
                 Destroy(obstacle, 8);
                 GetObstacleInfo(obstacle, _spawnObstacles);
+                SpawnCount++;
             }
         }
     }
