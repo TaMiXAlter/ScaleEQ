@@ -22,10 +22,7 @@ public class RangeDamegeEnemy : DamagePlayer
             timer = 0f;
         }
     }
-    void OnTriggerExit2D(Collider2D other)
-    {
-        timer = 0f;
-    }
+
     private void DamagePlayer(Collider2D other)
     {
         if (other.tag == "Player")
