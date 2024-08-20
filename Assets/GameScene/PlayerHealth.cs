@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private int Init_PlayerHealth;
-    private int Current_PlayerHealth;
-
+    public int Current_PlayerHealth { get; private set; }
+    public bool takeDamage { get; private set; } = false;
     void Start()
     {
         Current_PlayerHealth = Init_PlayerHealth;

@@ -117,13 +117,13 @@ public class MovingEnemies : MonoBehaviour
             if (spriteRenderer != null)
             {
                 float distance = Vector2.Distance(transform.position, hit.point);
-                if (distance < 1.5f)
+                if (distance < 0.5f)
                 {
                     Color color = spriteRenderer.color;
                     color.a = 0f;
                     spriteRenderer.color = color;
                 }
-                else if (distance >= 1.5f && !AlreadyHit)
+                else if (distance >= 0.5f && !AlreadyHit)
                 {
                     Color color = spriteRenderer.color;
                     color.a = 1f;
