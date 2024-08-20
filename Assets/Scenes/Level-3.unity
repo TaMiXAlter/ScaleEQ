@@ -278,6 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MasterMixer: {fileID: 24100000, guid: c1da615f7e0a9f742887d8aee2578c52, type: 2}
+  PlayerSoundEffect: {fileID: 0}
 --- !u!82 &59708608
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1320,40 +1321,40 @@ MonoBehaviour:
     SpawnPoint: {fileID: 1206658754}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: 5
     SpawnTime: 37.2
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1040999032}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 36.67
+    SpawnPoint: {fileID: 1044103844}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 37.67
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
     SpawnTime: 38.14
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 2133262834}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 37.6
+    SpawnPoint: {fileID: 2077826068}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 38.6
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: 5
     SpawnTime: 39.07
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 39.53
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 791855035}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 38.53
+    SpawnPoint: {fileID: 2103477493}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 0}
@@ -6330,17 +6331,16 @@ MonoBehaviour:
   m_Creator: {fileID: 0}
   m_Modifiers: []
   m_ColliderSegment:
-  - {x: -10.229657, y: 1.4178889}
-  - {x: -9.82812, y: 1.3769522}
-  - {x: -8.970166, y: 1.0202777}
-  - {x: -8.6410475, y: 0.9402872}
-  - {x: 0.6881514, y: 0.9861044}
-  - {x: 4.2108912, y: 1.0197475}
-  - {x: 8.274058, y: 1.0278008}
-  - {x: 8.71848, y: 1.0896447}
-  - {x: 9.645959, y: 1.3168436}
-  - {x: 10.090204, y: 1.3786657}
-  - {x: 10.3399, y: 1.3905569}
+  - {x: -10.000793, y: 1.627859}
+  - {x: -9.6714325, y: 1.5678872}
+  - {x: -8.888578, y: 1.2327522}
+  - {x: -8.632909, y: 1.1677421}
+  - {x: 0.876873, y: 1.2150675}
+  - {x: 3.9668944, y: 1.2462544}
+  - {x: 8.268382, y: 1.2553303}
+  - {x: 8.670467, y: 1.3121235}
+  - {x: 9.727596, y: 1.565665}
+  - {x: 10.110082, y: 1.6072375}
 --- !u!1971053207 &1988044626
 SpriteShapeRenderer:
   m_ObjectHideFlags: 0
@@ -6385,20 +6385,12 @@ SpriteShapeRenderer:
   m_SortingOrder: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_MaskInteraction: 0
-  m_ShapeTexture: {fileID: 2800000, guid: b281b91a70a624a0da1c43adc1c30c7b, type: 3}
+  m_ShapeTexture: {fileID: 0}
   m_Sprites:
-  - {fileID: 21300000, guid: 0ae2b74b1edd14bb18dd7b65ae916a54, type: 3}
-  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
-  - {fileID: 21300000, guid: 608e61deb05c54660bebf5a4dd2ee02d, type: 3}
+  - {fileID: 21300000, guid: 89236a8b004bf424283fb3ffaa01c003, type: 3}
   m_LocalAABB:
-    m_Center: {x: 0.054786682, y: 1.1796663, z: 0}
-    m_Extent: {x: 10.285685, y: 0.48871946, z: 0}
+    m_Center: {x: 0.05433941, y: 1.3983269, z: 0}
+    m_Extent: {x: 10.056263, y: 0.45754, z: 0}
   m_SpriteSortPoint: 0
 --- !u!4 &1988044627
 Transform:
@@ -6450,17 +6442,16 @@ EdgeCollider2D:
   m_Offset: {x: 0, y: -0.42}
   m_EdgeRadius: 0.72
   m_Points:
-  - {x: -10.229657, y: 1.4178889}
-  - {x: -9.82812, y: 1.3769522}
-  - {x: -8.970166, y: 1.0202777}
-  - {x: -8.6410475, y: 0.9402872}
-  - {x: 0.6881514, y: 0.9861044}
-  - {x: 4.2108912, y: 1.0197475}
-  - {x: 8.274058, y: 1.0278008}
-  - {x: 8.71848, y: 1.0896447}
-  - {x: 9.645959, y: 1.3168436}
-  - {x: 10.090204, y: 1.3786657}
-  - {x: 10.3399, y: 1.3905569}
+  - {x: -10.000793, y: 1.627859}
+  - {x: -9.6714325, y: 1.5678872}
+  - {x: -8.888578, y: 1.2327522}
+  - {x: -8.632909, y: 1.1677421}
+  - {x: 0.876873, y: 1.2150675}
+  - {x: 3.9668944, y: 1.2462544}
+  - {x: 8.268382, y: 1.2553303}
+  - {x: 8.670467, y: 1.3121235}
+  - {x: 9.727596, y: 1.565665}
+  - {x: 10.110082, y: 1.6072375}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
