@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     private PlayerSoundEffect PlayerSoundEffect;
     bool isKeyDown = false;
     private bool isInAir = false;
+
+    [SerializeField] private PlayerCharge PlayerCharge;
     void Start() {
         rigi = GetComponent<Rigidbody2D>();
         PlayerAnimator = GetComponent<Animator>();
@@ -60,14 +62,13 @@ public class PlayerMovement : MonoBehaviour
     void ChargeForDash()
     {
         if (Input.GetKey(KeyCode.A)) {
-            if (!isKeyDown)
-            {
+            if (!isKeyDown) {
                 PlayerSoundEffect.PlayCharge();
             }
             isKeyDown = true;
             if(movement.x > -maxSpeed) {
                 movement.x -= SpeedDelta*Time.deltaTime;
-                
+                PlayerCharge.ChangeSliderValue(Mathf.Lerp(0.5f,0,Mathf.Abs(movement.x/maxSpeed)) );
             }
         }
        
@@ -78,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
             isKeyDown = true;
             if(movement.x < maxSpeed) {
                 movement.x += SpeedDelta*Time.deltaTime;
+                PlayerCharge.ChangeSliderValue(Mathf.Lerp(0.5f,1f,Mathf.Abs(movement.x/maxSpeed)) );
             }
         }
      
@@ -90,6 +92,7 @@ public class PlayerMovement : MonoBehaviour
                 movement.x = 0;
                 isKeyDown = false;
                 PlayerSoundEffect.PlayRealease();
+                PlayerCharge.ChangeSliderValue(0.5f);
             }
         }
     }

@@ -99,8 +99,10 @@ public class GameSceneManager : MonoBehaviour
                     AudioManager.Instance.TogglePlay(false);
                     _gamePlayUI.ShowPauseView();
                 }
+                
                 if (SpawnCount != SpawnObstacles.Length) {
                     Timer = Time.time;
+                }else {
                     ReadyToFinish = true;
                 }
 
@@ -127,7 +129,7 @@ public class GameSceneManager : MonoBehaviour
     {
         foreach (SpawnObstacle _spawnObstacles in SpawnObstacles)
         {
-            if ((Timer - StartTime) >= _spawnObstacles.SpawnTime+SpawnDelayDelta && !_spawnObstacles.hasSpawned)
+            if ((Timer - StartTime) >= _spawnObstacles.SpawnTime+SpawnDelayDelta  && !_spawnObstacles.hasSpawned)
             {
                 GameObject obstacle = Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
                 Destroy(obstacle, 8);
