@@ -13,6 +13,7 @@ namespace UI
             Resume = transform.Find("Resume").GetComponent<Button>();
             Restart = transform.Find("Restart").GetComponent<Button>();
             Home = transform.Find("Home").GetComponent<Button>();
+            
             Resume.onClick.AddListener(() => { AudioManager.Instance.TogglePlay(true); GameSceneManager.Instance.state = GameSceneManager.GameState.GameStart; Hide(); });
             Restart.onClick.AddListener(() =>
             {

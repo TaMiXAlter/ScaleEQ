@@ -255,6 +255,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6688971704231344017, guid: 697d822539c73094892d2596c1dc0d31, type: 3}
   m_PrefabInstance: {fileID: 65444617}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &65444619 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 938616830040321408, guid: 697d822539c73094892d2596c1dc0d31, type: 3}
+  m_PrefabInstance: {fileID: 65444617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65444618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aad0e08ca552fec449e91445c54f06b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &71354608
 GameObject:
   m_ObjectHideFlags: 0
@@ -5422,10 +5433,26 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6942825303076328903, guid: 8aada07ef7762fb4fa26340a875520d0, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942825303076328903, guid: 8aada07ef7762fb4fa26340a875520d0, type: 3}
+      propertyPath: m_ReferenceResolution.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942825303076328903, guid: 8aada07ef7762fb4fa26340a875520d0, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 600
+      objectReference: {fileID: 0}
     - target: {fileID: 8801557581759664558, guid: 8aada07ef7762fb4fa26340a875520d0, type: 3}
       propertyPath: m_Name
       value: Health_Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8867610688499399992, guid: 8aada07ef7762fb4fa26340a875520d0, type: 3}
+      propertyPath: playerHealth
+      value: 
+      objectReference: {fileID: 65444619}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
