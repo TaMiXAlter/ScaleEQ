@@ -164,7 +164,7 @@ public class MovingEnemies : MonoBehaviour
                 else if (distance >= 0.5f && !AlreadyHit)
                 {
                     Color color = spriteRenderer.color;
-                    color.a = 1f;
+                    color.a = 0.5f;
                     spriteRenderer.color = color;
                     AlreadyHit = true;
                 }
