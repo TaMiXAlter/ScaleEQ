@@ -18,7 +18,7 @@ public class SpawnObstacle
     public float amplitude = 0f;
     public float frequency = 0f;
     [SerializeField] public bool hasSpawned { get; set; }
-    
+
 }
 public class GameSceneManager : MonoBehaviour
 {
@@ -30,7 +30,8 @@ public class GameSceneManager : MonoBehaviour
     {
         get
         {
-            if (instance == null) {
+            if (instance == null)
+            {
                 instance = GameObject.FindObjectOfType<GameSceneManager>();
             }
             return instance;
@@ -77,8 +78,15 @@ public class GameSceneManager : MonoBehaviour
                 break;
 
             case GameState.GameStart:
+                if (!UIManager.paused)
+                {
+                    Time.timeScale = 1;
+                }
+                else
+                {
+                    Time.timeScale = 0;
+                }
 
-                Time.timeScale = 1;
                 Timer = Time.time;
                 if (Player.GetComponent<PlayerHealth>().IfPlayerDead())
                 {

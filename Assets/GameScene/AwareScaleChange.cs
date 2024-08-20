@@ -5,16 +5,21 @@ using UnityEngine;
 public class AwareScaleChange : MonoBehaviour
 {
     public float MaxScale = 2f;
-    public float scaleCangeDuration = 0f;
+    public float scaleChangeDuration = 0f;
 
     public float ChangeToFireWorkTime = 0f;
     public float FireWorkLifeTime = 0f;
 
     public GameObject FireWork;
+    public GameObject AwareObj;
+    void Start()
+    {
+        InitRangeDamage();
+    }
     public void InitRangeDamage()
     {
 
-        transform.localScale = Vector3.zero;
+        AwareObj.transform.localScale = Vector3.zero;
         FireWork.SetActive(false);
         StartCoroutine(ScaleChange());
     }
@@ -22,19 +27,22 @@ public class AwareScaleChange : MonoBehaviour
     {
         float elapsedTime = 0f;
 
-        while (elapsedTime < scaleCangeDuration)
+        while (elapsedTime < scaleChangeDuration)
         {
             elapsedTime += Time.deltaTime;
-            transform.localScale = new Vector3(Mathf.Lerp(0f, MaxScale, elapsedTime / scaleCangeDuration),
-            Mathf.Lerp(0f, MaxScale, elapsedTime / scaleCangeDuration),
-            Mathf.Lerp(0f, MaxScale, elapsedTime / scaleCangeDuration));
+            float t = elapsedTime / scaleChangeDuration;
+            AwareObj.transform.localScale = Vector3.one * Mathf.Lerp(0f, MaxScale, t);
             yield return null;
         }
-        transform.localScale = new Vector3(MaxScale, MaxScale, MaxScale);
+
+        AwareObj.transform.localScale = Vector3.one * MaxScale;
+
         yield return new WaitForSeconds(ChangeToFireWorkTime);
+        Destroy(AwareObj.gameObject);
+
         FireWork.SetActive(true);
         yield return new WaitForSeconds(FireWorkLifeTime);
-        Destroy(gameObject);
 
+        Destroy(FireWork.gameObject);
     }
 }
