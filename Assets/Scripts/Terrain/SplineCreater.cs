@@ -40,9 +40,9 @@ public class SplineCreater : MonoBehaviour
     private float Width,Height;
     
     [Header("Modifier")]
-    [SerializeField][Range(0,1f)]
+    [SerializeField][Range(0,2f)]
     private float YAduioModifier = 0.5f ;
-    [SerializeField][Range(0,1f)]
+    [SerializeField][Range(0,2f)]
     private float YControllerModifier= 0.5f ;
     
     private SpriteShapeController _spriteShapeController;

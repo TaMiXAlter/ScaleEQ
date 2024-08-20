@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,10 +18,26 @@ public class SpawnObstacle
     public float amplitude = 0f;
     public float frequency = 0f;
     [SerializeField] public bool hasSpawned { get; set; }
-
+    
 }
 public class GameSceneManager : MonoBehaviour
 {
+    #region Singleton
+
+    private static GameSceneManager instance;
+
+    public static GameSceneManager Instance
+    {
+        get
+        {
+            if (instance == null) {
+                instance = GameObject.FindObjectOfType<GameSceneManager>();
+            }
+            return instance;
+        }
+    }
+
+    #endregion
     public enum GameState
     {
         WaitForStart,
@@ -32,6 +49,10 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private SpawnObstacle[] SpawnObstacles;
     private float Timer = 0;
     private GameState state;
+
+    public EventHandler startGameHandler;
+
+    private void Awake() => instance = this;
     void Start()
     {
         state = GameState.WaitForStart; // Initial state
@@ -51,6 +72,7 @@ public class GameSceneManager : MonoBehaviour
                 if (StartTheGame)
                 {
                     state = GameState.GameStart;
+                    startGameHandler?.Invoke(this, EventArgs.Empty);
                 }
                 break;
 
