@@ -1,4 +1,5 @@
 
+using System;
 using UnityEngine;
 using UnityEngine.Audio;
 
@@ -21,12 +22,21 @@ public class AudioManager : MonoBehaviour
     #endregion
      
     private AudioFrequency audioFrequency;
+    private AudioSource audioSource;
     [SerializeField]
     AudioMixer MasterMixer;
     private void Awake() {
         instance = this;
         audioFrequency = gameObject.AddComponent<AudioFrequency>();
+        audioSource = GetComponent<AudioSource>();
+        GameSceneManager.Instance.startGameHandler+=StartGame;
     }
+
+    private void StartGame(object sender, EventArgs e)
+    {
+        audioSource.Play();
+    }
+
     public float[] GetAudioBuffer() {
        return audioFrequency._bandBuffer;
     }
@@ -34,4 +44,6 @@ public class AudioManager : MonoBehaviour
         MasterMixer.SetFloat("Gain", gain);
         MasterMixer.SetFloat("Freq", freq);
     }
+
+   
 }
