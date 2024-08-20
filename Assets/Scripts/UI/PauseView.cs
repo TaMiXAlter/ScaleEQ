@@ -4,8 +4,9 @@ using UnityEngine.UI;
 
 namespace UI
 {
-    public class PauseView:GamePlayUIView
+    public class PauseView : GamePlayUIView
     {
+        [SerializeField]
         Button Resume, Restart, Home;
         void OnEnable()
         {
@@ -13,7 +14,8 @@ namespace UI
             Restart = transform.Find("Restart").GetComponent<Button>();
             Home = transform.Find("Home").GetComponent<Button>();
             Resume.onClick.AddListener(() => { AudioManager.Instance.TogglePlay(true); GameSceneManager.Instance.state = GameSceneManager.GameState.GameStart; Hide(); });
-            Restart.onClick.AddListener(() => { 
+            Restart.onClick.AddListener(() =>
+            {
                 GameManager.Instance.ChangeScene(GameManager.Instance.CurrentSceneName);
                 GameSceneManager.Instance.StartTime = Time.time;
             });
