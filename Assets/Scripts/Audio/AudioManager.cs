@@ -25,11 +25,15 @@ public class AudioManager : MonoBehaviour
     private AudioSource audioSource;
     [SerializeField]
     AudioMixer MasterMixer;
+
+    public PlayerSoundEffect PlayerSoundEffect;
     private void Awake() {
         instance = this;
         audioFrequency = gameObject.AddComponent<AudioFrequency>();
         audioSource = GetComponent<AudioSource>();
         GameSceneManager.Instance.startGameHandler+=StartGame;
+        
+        PlayerSoundEffect = transform.Find("PlayerSoundEffect").GetComponent<PlayerSoundEffect>();
     }
 
     private void StartGame(object sender, EventArgs e)
