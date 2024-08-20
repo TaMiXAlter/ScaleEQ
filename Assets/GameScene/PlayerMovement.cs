@@ -6,7 +6,6 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
 {
-    private ChargeArrow _chargeArrow;
     
     private Rigidbody2D rigi;
     [SerializeField]
@@ -18,7 +17,6 @@ public class PlayerMovement : MonoBehaviour
     bool isKeyDown = false;
     void Start() {
         rigi = GetComponent<Rigidbody2D>();
-        _chargeArrow = GameObject.Find("ChargeArrow").GetComponent<ChargeArrow>();
     }
 
     private void Update()
@@ -39,7 +37,7 @@ public class PlayerMovement : MonoBehaviour
         
         
         if(movement.x != 0) {
-            _chargeArrow.Move(movement/maxSpeed);
+            
         }
         
         if (isKeyDown)
@@ -49,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
                 rigi.AddForce(movement, ForceMode2D.Impulse);
                 movement.x = 0;
                 isKeyDown = false;
-                _chargeArrow.Reset();
+                
             }
         }
        
