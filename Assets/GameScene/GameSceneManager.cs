@@ -49,8 +49,7 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private bool StartTheGame = false;
     [SerializeField] private SpawnObstacle[] SpawnObstacles;
     [SerializeField] private float SpawnDelayDelta = 0f;
-
-    [SerializeField] private UIManager uIManager;
+    
     private float Timer = 0;
     private GameState state;
 
@@ -81,18 +80,9 @@ public class GameSceneManager : MonoBehaviour
                 break;
 
             case GameState.GameStart:
-                if (!uIManager.paused)
-                {
-                    Time.timeScale = 1;
-                }
-                else
-                {
-                    Time.timeScale = 0;
-                }
-
+                Time.timeScale = 1;
                 Timer = Time.time;
-                if (Player.GetComponent<PlayerHealth>().IfPlayerDead())
-                {
+                if (Player.GetComponent<PlayerHealth>().IfPlayerDead()) {
                     state = GameState.GameOver;
                 }
                 break;
@@ -101,7 +91,6 @@ public class GameSceneManager : MonoBehaviour
 
                 Timer = 0;
                 Time.timeScale = 0;
-                uIManager.ShowGameOverCanvas();
                 break;
         }
     }
@@ -109,12 +98,12 @@ public class GameSceneManager : MonoBehaviour
     {
         foreach (SpawnObstacle _spawnObstacles in SpawnObstacles)
         {
-            if (Timer >= _spawnObstacles.SpawnTime+SpawnDelayDelta && !_spawnObstacles.hasSpawned)
+            if (Timer >= _spawnObstacles.SpawnTime && !_spawnObstacles.hasSpawned)
             {
                 GameObject obstacle = Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
+                _spawnObstacles.hasSpawned = true;
                 Destroy(obstacle, 8);
                 GetObstacleInfo(obstacle, _spawnObstacles);
-
             }
         }
     }
