@@ -48,6 +48,7 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private GameObject Player;
     [SerializeField] private bool StartTheGame = false;
     [SerializeField] private SpawnObstacle[] SpawnObstacles;
+    [SerializeField] private float SpawnDelayDelta = 0f;
 
     [SerializeField] private UIManager uIManager;
     private float Timer = 0;
@@ -108,7 +109,7 @@ public class GameSceneManager : MonoBehaviour
     {
         foreach (SpawnObstacle _spawnObstacles in SpawnObstacles)
         {
-            if (Timer >= _spawnObstacles.SpawnTime && !_spawnObstacles.hasSpawned)
+            if (Timer >= _spawnObstacles.SpawnTime+SpawnDelayDelta && !_spawnObstacles.hasSpawned)
             {
                 GameObject obstacle = Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
                 Destroy(obstacle, 8);
