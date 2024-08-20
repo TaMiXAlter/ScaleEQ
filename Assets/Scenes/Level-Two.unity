@@ -769,6 +769,8 @@ MonoBehaviour:
     MoveSpeed: -4
     SpawnTime: 4.03
     SpawnPoint: {fileID: 2133262834}
+<<<<<<< HEAD
+=======
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
@@ -793,34 +795,98 @@ MonoBehaviour:
     MoveSpeed: -4
     SpawnTime: 13.1
     SpawnPoint: {fileID: 2133262834}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 4
+<<<<<<< HEAD
+    SpawnTime: 5.79
+    SpawnPoint: {fileID: 791855035}
+=======
     SpawnTime: 13.86
     SpawnPoint: {fileID: 1725132781}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
+<<<<<<< HEAD
+    SpawnTime: 7.81
+    SpawnPoint: {fileID: 3215241}
+=======
     SpawnTime: 15.12
     SpawnPoint: {fileID: 1162046184}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 4
+<<<<<<< HEAD
+    SpawnTime: 12.1
+    SpawnPoint: {fileID: 791855035}
+=======
     SpawnTime: 15.88
     SpawnPoint: {fileID: 1040999032}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
+<<<<<<< HEAD
+    SpawnTime: 13.1
+=======
     SpawnTime: 17.14
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     SpawnPoint: {fileID: 2133262834}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 4
+<<<<<<< HEAD
+    SpawnTime: 13.86
+=======
+    SpawnTime: 17.89
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    SpawnPoint: {fileID: 1725132781}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+<<<<<<< HEAD
+    SpawnTime: 15.12
+    SpawnPoint: {fileID: 1162046184}
+=======
+    SpawnTime: 18.65
+    SpawnPoint: {fileID: 1629296798}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+<<<<<<< HEAD
+    SpawnTime: 15.88
+    SpawnPoint: {fileID: 1040999032}
+=======
+    SpawnTime: 19.16
+    SpawnPoint: {fileID: 810493666}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+<<<<<<< HEAD
+    SpawnTime: 17.14
+    SpawnPoint: {fileID: 2133262834}
+=======
+    SpawnTime: 19.66
+    SpawnPoint: {fileID: 3215241}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+<<<<<<< HEAD
     SpawnTime: 17.89
     SpawnPoint: {fileID: 1725132781}
     amplitude: 0
@@ -841,10 +907,7 @@ MonoBehaviour:
     MoveSpeed: -4
     SpawnTime: 19.66
     SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: 4
+=======
     SpawnTime: 20.16
     SpawnPoint: {fileID: 1040999032}
     amplitude: 0
@@ -865,10 +928,21 @@ MonoBehaviour:
     MoveSpeed: 3
     SpawnTime: 21.68
     SpawnPoint: {fileID: 1293600345}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 4
+<<<<<<< HEAD
+    SpawnTime: 20.16
+    SpawnPoint: {fileID: 1040999032}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 20.67
+    SpawnPoint: {fileID: 12261668}
+=======
     SpawnTime: 22.18
     SpawnPoint: {fileID: 810493666}
     amplitude: 0
@@ -877,46 +951,122 @@ MonoBehaviour:
     MoveSpeed: 3
     SpawnTime: 22.68
     SpawnPoint: {fileID: 453522461}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
+<<<<<<< HEAD
+    SpawnTime: 21.17
+    SpawnPoint: {fileID: 1162046184}
+=======
     SpawnTime: 23.19
     SpawnPoint: {fileID: 2133262834}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
     MoveSpeed: 3
+<<<<<<< HEAD
+    SpawnTime: 21.68
+    SpawnPoint: {fileID: 1293600345}
+=======
     SpawnTime: 23.69
     SpawnPoint: {fileID: 1072855364}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 4
+<<<<<<< HEAD
+    SpawnTime: 22.18
+    SpawnPoint: {fileID: 810493666}
+=======
     SpawnTime: 24.2
     SpawnPoint: {fileID: 791855035}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
     MoveSpeed: 3
+<<<<<<< HEAD
+    SpawnTime: 22.68
+    SpawnPoint: {fileID: 453522461}
+=======
     SpawnTime: 24.7
     SpawnPoint: {fileID: 2140783580}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
+<<<<<<< HEAD
+    SpawnTime: 23.19
+    SpawnPoint: {fileID: 2133262834}
+=======
     SpawnTime: 25.21
     SpawnPoint: {fileID: 3215241}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
     MoveSpeed: 3
+<<<<<<< HEAD
+    SpawnTime: 23.69
+    SpawnPoint: {fileID: 1072855364}
+=======
     SpawnTime: 25.71
     SpawnPoint: {fileID: 177426195}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 4
+<<<<<<< HEAD
+    SpawnTime: 24.2
+    SpawnPoint: {fileID: 791855035}
+=======
+    SpawnTime: 26.21
+    SpawnPoint: {fileID: 999405212}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+<<<<<<< HEAD
+    SpawnTime: 24.7
+    SpawnPoint: {fileID: 2140783580}
+=======
+    SpawnTime: 26.72
+    SpawnPoint: {fileID: 1791747041}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+<<<<<<< HEAD
+    SpawnTime: 25.21
+    SpawnPoint: {fileID: 3215241}
+=======
+    SpawnTime: 27.22
+    SpawnPoint: {fileID: 477194382}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+<<<<<<< HEAD
+    SpawnTime: 25.71
+    SpawnPoint: {fileID: 177426195}
+=======
+    SpawnTime: 27.73
+    SpawnPoint: {fileID: 281034234}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+<<<<<<< HEAD
     SpawnTime: 26.21
     SpawnPoint: {fileID: 999405212}
     amplitude: 0
@@ -925,10 +1075,21 @@ MonoBehaviour:
     MoveSpeed: 3
     SpawnTime: 26.72
     SpawnPoint: {fileID: 1791747041}
+=======
+    SpawnTime: 28.23
+    SpawnPoint: {fileID: 999405212}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 28.23
+    SpawnPoint: {fileID: 1040999032}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
+<<<<<<< HEAD
     SpawnTime: 27.22
     SpawnPoint: {fileID: 477194382}
     amplitude: 0
@@ -943,16 +1104,7 @@ MonoBehaviour:
     MoveSpeed: 4
     SpawnTime: 28.23
     SpawnPoint: {fileID: 999405212}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: 4
-    SpawnTime: 28.23
-    SpawnPoint: {fileID: 1040999032}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: -4
+=======
     SpawnTime: 28.23
     SpawnPoint: {fileID: 1162046184}
     amplitude: 0
@@ -967,16 +1119,70 @@ MonoBehaviour:
     MoveSpeed: 3
     SpawnTime: 29.24
     SpawnPoint: {fileID: 12261668}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 4
+<<<<<<< HEAD
+    SpawnTime: 28.23
+    SpawnPoint: {fileID: 1040999032}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 28.23
+    SpawnPoint: {fileID: 1162046184}
+=======
     SpawnTime: 30.25
     SpawnPoint: {fileID: 1725132781}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: 4
+    SpawnTime: 30.25
+    SpawnPoint: {fileID: 791855035}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+<<<<<<< HEAD
+    SpawnTime: 28.23
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 29.24
+    SpawnPoint: {fileID: 12261668}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 30.25
+    SpawnPoint: {fileID: 1725132781}
+=======
+    SpawnTime: 30.25
+    SpawnPoint: {fileID: 3215241}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 30.25
+    SpawnPoint: {fileID: 1629296798}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 31.26
+    SpawnPoint: {fileID: 177426195}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+<<<<<<< HEAD
     SpawnTime: 30.25
     SpawnPoint: {fileID: 791855035}
     amplitude: 0
@@ -1051,6 +1257,82 @@ MonoBehaviour:
     MoveSpeed: 3
     SpawnTime: 2
     SpawnPoint: {fileID: 712168877}
+=======
+    SpawnTime: 32.26
+    SpawnPoint: {fileID: 999405212}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 32.26
+    SpawnPoint: {fileID: 810493666}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 32.26
+    SpawnPoint: {fileID: 1040999032}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 32.26
+    SpawnPoint: {fileID: 1162046184}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 32.26
+    SpawnPoint: {fileID: 2133262834}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 32.26
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 33.27
+    SpawnPoint: {fileID: 12261668}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 33.27
+    SpawnPoint: {fileID: 1293600345}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: 5
+    SpawnTime: 34.79
+    SpawnPoint: {fileID: 1725132781}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 35.29
+    SpawnPoint: {fileID: 1629296798}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: 5
+    SpawnTime: 35.67
+    SpawnPoint: {fileID: 999405212}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 35.92
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: 5
+    SpawnTime: 36.3
+    SpawnPoint: {fileID: 810493666}
+>>>>>>> parent of 6f5b75e (sucky sucky cocky cocky matha faka 2 + 2 is 4, minus 1 is 3 quick math, the ting goes skrrrrrrrrrrrrrr ra papakakaka spididi papa and the boom boom budud BOM)
     amplitude: 0
     frequency: 0
 --- !u!1 &281034233
