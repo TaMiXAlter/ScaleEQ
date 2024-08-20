@@ -602,7 +602,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad0e08ca552fec449e91445c54f06b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Init_PlayerHealth: 900
+  Init_PlayerHealth: 5
 --- !u!50 &182007747
 Rigidbody2D:
   serializedVersion: 4
@@ -964,12 +964,6 @@ MonoBehaviour:
     frequency: 3
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -5
-    SpawnTime: 37.31
-    SpawnPoint: {fileID: 2133262834}
-    amplitude: 2
-    frequency: 3
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -5
     SpawnTime: 38.31
     SpawnPoint: {fileID: 3215241}
     amplitude: 2
@@ -990,12 +984,6 @@ MonoBehaviour:
     MoveSpeed: 5
     SpawnTime: 39.83
     SpawnPoint: {fileID: 1040999032}
-    amplitude: 2
-    frequency: 3
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 40.71
-    SpawnPoint: {fileID: 2133262834}
     amplitude: 2
     frequency: 3
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
@@ -1030,18 +1018,6 @@ MonoBehaviour:
     frequency: 3
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -5
-    SpawnTime: 44.37
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 2
-    frequency: 3
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 44.37
-    SpawnPoint: {fileID: 1629296798}
-    amplitude: 2
-    frequency: 3
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -5
     SpawnTime: 45.37
     SpawnPoint: {fileID: 2133262834}
     amplitude: 2
@@ -1065,21 +1041,9 @@ MonoBehaviour:
     amplitude: 2
     frequency: 3
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 48.4
-    SpawnPoint: {fileID: 1162046184}
-    amplitude: 2
-    frequency: 3
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: 5
     SpawnTime: 48.9
     SpawnPoint: {fileID: 1725132781}
-    amplitude: 2
-    frequency: 3
-  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
-    MoveSpeed: -5
-    SpawnTime: 49.41
-    SpawnPoint: {fileID: 1629296798}
     amplitude: 2
     frequency: 3
   - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
@@ -1635,18 +1599,6 @@ MonoBehaviour:
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
-    MoveSpeed: 4
-    SpawnTime: 100.84
-    SpawnPoint: {fileID: 810493666}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
-    MoveSpeed: 3
-    SpawnTime: 101.34
-    SpawnPoint: {fileID: 12261668}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 101.84
     SpawnPoint: {fileID: 2133262834}
@@ -1683,27 +1635,15 @@ MonoBehaviour:
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
-    MoveSpeed: -4
-    SpawnTime: 104.87
-    SpawnPoint: {fileID: 281034234}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: 4
     SpawnTime: 104.87
-    SpawnPoint: {fileID: 1791747041}
+    SpawnPoint: {fileID: 177426195}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
     MoveSpeed: 3
     SpawnTime: 105.37
     SpawnPoint: {fileID: 810493666}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
-    MoveSpeed: 4
-    SpawnTime: 105.88
-    SpawnPoint: {fileID: 177426195}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
