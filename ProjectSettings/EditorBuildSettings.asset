@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TaMiDev2.unity
     guid: 717618c2a8d459c41946e6b911e2ab60
+  - enabled: 1
+    path: Assets/Scenes/FrankDev_2.unity
+    guid: d0cbbff755e9cc848ac092413c74419e
   m_configObjects: {}

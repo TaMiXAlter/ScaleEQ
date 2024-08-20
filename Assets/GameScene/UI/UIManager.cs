@@ -4,40 +4,62 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+    #region Singleton
+
+    private static UIManager instance;
+
+    public static UIManager Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = GameObject.FindObjectOfType<UIManager>();
+            }
+            return instance;
+        }
+    }
+
+    #endregion
     [SerializeField] private Canvas PauseCanvas;
     [SerializeField] private Button Continue_Btm;
     [SerializeField] private Button Restart_Btm;
     [SerializeField] private Button Home_Btm;
 
-    public static UIManager instance;
     public static bool paused = false;
     void Start()
     {
-        instance = this;
+
         paused = false;
         PauseCanvas.gameObject.SetActive(false);
 
-        Continue_Btm.onClick.AddListener(Continue());
-        Restart_Btm.onClick.AddListener(Restart());
-        Home_Btm.onClick.AddListener(Home());
+        Continue_Btm.onClick.AddListener(() => { Continue(); });
+        Restart_Btm.onClick.AddListener(() => { Restart(); });
+        Home_Btm.onClick.AddListener(() => { Home(); });
     }
 
-    private UnityAction Home()
+    private void Home()
     {
-        throw new NotImplementedException();
+
     }
 
-    private UnityAction Restart()
+    private void Restart()
     {
-        throw new NotImplementedException();
+        string currentSceneName = SceneManager.GetActiveScene().name;
+        SceneManager.LoadScene(currentSceneName);
     }
 
-    private UnityAction Continue()
+    private void Continue()
     {
-        throw new NotImplementedException();
+        if (paused)
+        {
+            paused = false;
+            PauseCanvas.gameObject.SetActive(paused);
+        }
     }
 
     void Update()
@@ -48,15 +70,6 @@ public class UIManager : MonoBehaviour
             paused = !paused;
             PauseCanvas.gameObject.SetActive(paused);
 
-        }
-
-        if (paused)
-        {
-            Time.timeScale = 0;
-        }
-        else
-        {
-            Time.timeScale = 1;
         }
     }
 
