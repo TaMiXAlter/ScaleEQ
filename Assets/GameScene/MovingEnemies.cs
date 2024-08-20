@@ -101,14 +101,32 @@ public class MovingEnemies : MonoBehaviour
     }
     private void DirectionToScale(Vector2 move_direction)
     {
-        if (move_direction.x > 0 || move_direction.y > 0)
+
+
+        if (movementType != MovementType.VerticalMoving)
         {
-            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            if (move_direction.x > 0)
+            {
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            }
+            else if (move_direction.x < 0)
+            {
+                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            }
         }
-        else if (move_direction.x < 0 || move_direction.y < 0)
+        else
         {
-            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            if (move_direction.y > 0)
+            {
+                transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+            }
+            else if (move_direction.y < 0)
+            {
+                transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+            }
         }
+
+
 
     }
     private IEnumerator WaveMoveRoute()
