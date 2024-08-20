@@ -154,6 +154,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 135940083}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &8170165
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8170166}
+  m_Layer: 0
+  m_Name: SP-41
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8170166
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8170165}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.67, y: -3.02, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &12261667
 GameObject:
   m_ObjectHideFlags: 0
@@ -184,6 +215,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 135940083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &53679839
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 53679840}
+  m_Layer: 0
+  m_Name: SP-24
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &53679840
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53679839}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.27, y: 0.9499999, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &59708606
 GameObject:
@@ -457,6 +519,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &124162852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 124162853}
+  m_Layer: 0
+  m_Name: SP-21
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &124162853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 124162852}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.67, y: 0.95, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &129801329
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 129801330}
+  m_Layer: 0
+  m_Name: SP-13
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &129801330
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129801329}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.86, y: 2.86, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &135940082
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,268 +888,436 @@ MonoBehaviour:
   Player: {fileID: 182007738}
   StartTheGame: 1
   SpawnObstacles:
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
-    SpawnTime: 3.7
+    SpawnTime: 3.72
     SpawnPoint: {fileID: 3215241}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 4.65
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 2133262834}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 5.34
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1629296798}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 7.44
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 999405212}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 8.37
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 810493666}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 9.07
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1040999032}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 10
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 12261668}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
     SpawnTime: 11.16
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1072855364}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 11.62
+    SpawnPoint: {fileID: 1791747041}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 12.09
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1007305123}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 12.32
+    SpawnPoint: {fileID: 12261668}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 12.79
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 2140783580}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 12.48
+    SpawnPoint: {fileID: 233883802}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 13.41
+    SpawnPoint: {fileID: 1466985708}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 14.88
+    SpawnPoint: {fileID: 999405212}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 14.88
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 15.81
+    SpawnPoint: {fileID: 1072855364}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 15.81
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 453522461}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 16.51
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 16.67
+    SpawnPoint: {fileID: 371738141}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 17.67
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 16.67
+    SpawnPoint: {fileID: 567832208}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 18.14
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 17.14
+    SpawnPoint: {fileID: 53679840}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 17.14
+    SpawnPoint: {fileID: 897651060}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 18.6
     SpawnPoint: {fileID: 3215241}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
-    SpawnTime: 19.07
-    SpawnPoint: {fileID: 3215241}
+    SpawnTime: 18.6
+    SpawnPoint: {fileID: 1629296798}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 19.53
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 18.53
+    SpawnPoint: {fileID: 129801330}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 19.88
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 18.88
+    SpawnPoint: {fileID: 1206658754}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 20.23
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 19.23
+    SpawnPoint: {fileID: 1617435927}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 21.16
+    SpawnPoint: {fileID: 177426195}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 21.16
+    SpawnPoint: {fileID: 2101030054}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 22.32
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1007305123}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
-    SpawnTime: 22.79
-    SpawnPoint: {fileID: 3215241}
+    SpawnTime: 22.32
+    SpawnPoint: {fileID: 2140783580}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
     MoveSpeed: -4
-    SpawnTime: 23.25
-    SpawnPoint: {fileID: 3215241}
+    SpawnTime: 22.25
+    SpawnPoint: {fileID: 622541584}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
     MoveSpeed: -4
-    SpawnTime: 23.6
-    SpawnPoint: {fileID: 3215241}
+    SpawnTime: 22.6
+    SpawnPoint: {fileID: 1206658754}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
     MoveSpeed: -4
-    SpawnTime: 23.95
-    SpawnPoint: {fileID: 3215241}
+    SpawnTime: 22.95
+    SpawnPoint: {fileID: 741240047}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 25.58
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 24.88
+    SpawnPoint: {fileID: 1725132781}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 24.88
+    SpawnPoint: {fileID: 791855035}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 24.88
+    SpawnPoint: {fileID: 791855035}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
     SpawnTime: 26.04
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 12261668}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 26.51
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 26.04
+    SpawnPoint: {fileID: 1293600345}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 26.97
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 25.97
+    SpawnPoint: {fileID: 233883802}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 27.32
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 25.97
+    SpawnPoint: {fileID: 371738141}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 27.67
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 25.97
+    SpawnPoint: {fileID: 567832208}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 25.97
+    SpawnPoint: {fileID: 1466985708}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 26.32
+    SpawnPoint: {fileID: 2077826068}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 26.32
+    SpawnPoint: {fileID: 53679840}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 26.32
+    SpawnPoint: {fileID: 897651060}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 26.32
+    SpawnPoint: {fileID: 827067006}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 28.72
+    SpawnPoint: {fileID: 1072855364}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
+    SpawnTime: 28.72
+    SpawnPoint: {fileID: 453522461}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 29.07
+    SpawnPoint: {fileID: 999405212}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 29.07
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
     SpawnTime: 29.76
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 810493666}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 30.23
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2134072378232170611, guid: 0f6bec0c496452547a22b6bffbb72822, type: 3}
+    MoveSpeed: 3
+    SpawnTime: 29.76
+    SpawnPoint: {fileID: 2133262834}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 30.69
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 29.69
+    SpawnPoint: {fileID: 129801330}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 31.04
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 29.69
+    SpawnPoint: {fileID: 1617435927}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 31.39
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 30.04
+    SpawnPoint: {fileID: 2077826068}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 30.04
+    SpawnPoint: {fileID: 53679840}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 30.04
+    SpawnPoint: {fileID: 897651060}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 30.04
+    SpawnPoint: {fileID: 827067006}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 30.39
+    SpawnPoint: {fileID: 622541584}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 30.39
+    SpawnPoint: {fileID: 741240047}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 32.32
+    SpawnPoint: {fileID: 1162046184}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 32.32
+    SpawnPoint: {fileID: 2133262834}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
+    SpawnTime: 32.32
+    SpawnPoint: {fileID: 477194382}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: 5
     SpawnTime: 33.48
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1725132781}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 32.95
+    SpawnPoint: {fileID: 1915269553}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 33.95
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
     MoveSpeed: -4
     SpawnTime: 34.41
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1629296798}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 33.88
+    SpawnPoint: {fileID: 2077826068}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 34.88
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: 5
     SpawnTime: 35.34
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 810493666}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 34.81
+    SpawnPoint: {fileID: 897651060}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 35.81
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3626131539423349920, guid: 2aaf0fa1d3a4f6a4a99fcea21be4ff7f, type: 3}
+    MoveSpeed: -5
     SpawnTime: 36.27
     SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 36.74
-    SpawnPoint: {fileID: 3215241}
+    amplitude: 2
+    frequency: 3
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 35.74
+    SpawnPoint: {fileID: 1206658754}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 0}
@@ -2132,6 +2424,68 @@ MonoBehaviour:
     SpawnPoint: {fileID: 3215241}
     amplitude: 0
     frequency: 0
+--- !u!1 &230043624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 230043625}
+  m_Layer: 0
+  m_Name: SP-14
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &230043625
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 230043624}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.27, y: 2.86, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &233883801
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 233883802}
+  m_Layer: 0
+  m_Name: SP-11
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &233883802
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233883801}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.67, y: 2.86, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281034233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2162,6 +2516,93 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 135940083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &371738140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371738141}
+  m_Layer: 0
+  m_Name: SP-15
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &371738141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371738140}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.31, y: 2.86, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &379878803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379878804}
+  m_Layer: 0
+  m_Name: SpawnInside
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &379878804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379878803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.8160402, y: 1.99, z: -0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 233883802}
+  - {fileID: 1044157386}
+  - {fileID: 129801330}
+  - {fileID: 230043625}
+  - {fileID: 371738141}
+  - {fileID: 124162853}
+  - {fileID: 2077826068}
+  - {fileID: 1044103844}
+  - {fileID: 53679840}
+  - {fileID: 2056092255}
+  - {fileID: 622541584}
+  - {fileID: 1087838371}
+  - {fileID: 1206658754}
+  - {fileID: 2103477493}
+  - {fileID: 741240047}
+  - {fileID: 8170166}
+  - {fileID: 897651060}
+  - {fileID: 1915269553}
+  - {fileID: 827067006}
+  - {fileID: 1178425453}
+  - {fileID: 567832208}
+  - {fileID: 1964725236}
+  - {fileID: 1617435927}
+  - {fileID: 1411753845}
+  - {fileID: 1466985708}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &392186083
 GameObject:
@@ -2354,6 +2795,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 135940083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &567832207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 567832208}
+  m_Layer: 0
+  m_Name: SP-51
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &567832208
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567832207}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.67, y: -4.91, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &583761778
 GameObject:
@@ -2671,6 +3143,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &622541583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622541584}
+  m_Layer: 0
+  m_Name: SP-31
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622541584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622541583}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.67, y: -0.97, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &692429156
 GameObject:
   m_ObjectHideFlags: 0
@@ -2801,6 +3304,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &741240046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741240047}
+  m_Layer: 0
+  m_Name: SP-35
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &741240047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741240046}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.31, y: -0.97, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &791855034
 GameObject:
   m_ObjectHideFlags: 0
@@ -2993,6 +3527,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &827067005
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 827067006}
+  m_Layer: 0
+  m_Name: SP-44
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &827067006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827067005}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.27, y: -3.02, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &872103417
 GameObject:
   m_ObjectHideFlags: 0
@@ -3253,6 +3818,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &897651059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 897651060}
+  m_Layer: 0
+  m_Name: SP-42
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &897651060
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 897651059}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.32, y: -3.02, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &996554359
 GameObject:
   m_ObjectHideFlags: 0
@@ -3606,6 +4202,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 135940083}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1044103843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044103844}
+  m_Layer: 0
+  m_Name: SP-23
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044103844
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044103843}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.86000013, y: 0.9499999, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1044157385
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044157386}
+  m_Layer: 0
+  m_Name: SP-12
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044157386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044157385}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.32, y: 2.86, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1072855363
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,6 +4295,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 135940083}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1087838370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1087838371}
+  m_Layer: 0
+  m_Name: SP-32
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1087838371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087838370}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.32, y: -0.97, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1162046183
 GameObject:
   m_ObjectHideFlags: 0
@@ -3667,6 +4356,68 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 135940083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1178425452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178425453}
+  m_Layer: 0
+  m_Name: SP-45
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178425453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178425452}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.31, y: -3.02, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1206658753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1206658754}
+  m_Layer: 0
+  m_Name: SP-33
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1206658754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206658753}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.86000013, y: -0.97, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1219755184
 GameObject:
@@ -4219,6 +4970,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1411753844
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1411753845}
+  m_Layer: 0
+  m_Name: SP-54
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1411753845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411753844}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.27, y: -4.91, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1466339419
 GameObject:
   m_ObjectHideFlags: 0
@@ -4349,6 +5131,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1466985707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1466985708}
+  m_Layer: 0
+  m_Name: SP-55
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1466985708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1466985707}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.31, y: -4.91, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1564066126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4479,6 +5292,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1617435926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1617435927}
+  m_Layer: 0
+  m_Name: SP-53
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1617435927
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617435926}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.86000013, y: -4.91, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1629296797
 GameObject:
   m_ObjectHideFlags: 0
@@ -5013,6 +5857,37 @@ Transform:
   - {fileID: 588971564}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1915269552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1915269553}
+  m_Layer: 0
+  m_Name: SP-43
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1915269553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915269552}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.86000013, y: -3.02, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1948987386
 GameObject:
   m_ObjectHideFlags: 0
@@ -5273,6 +6148,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1964725235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1964725236}
+  m_Layer: 0
+  m_Name: SP-52
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1964725236
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964725235}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.32, y: -4.91, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988044623
 GameObject:
   m_ObjectHideFlags: 0
@@ -5829,6 +6735,68 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2056092254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2056092255}
+  m_Layer: 0
+  m_Name: SP-25
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2056092255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2056092254}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 7.31, y: 0.9499999, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2077826067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2077826068}
+  m_Layer: 0
+  m_Name: SP-22
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077826068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077826067}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.32, y: 0.9499999, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2101030053
 GameObject:
   m_ObjectHideFlags: 0
@@ -5859,6 +6827,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 135940083}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2103477492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2103477493}
+  m_Layer: 0
+  m_Name: SP-34
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2103477493
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2103477492}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.27, y: -0.97, z: 0.052904706}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 379878804}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2114762240
 GameObject:
@@ -6061,6 +7060,7 @@ SceneRoots:
   - {fileID: 182007742}
   - {fileID: 184363359}
   - {fileID: 135940083}
+  - {fileID: 379878804}
   - {fileID: 59708609}
   - {fileID: 1988044627}
   - {fileID: 2021063804}
