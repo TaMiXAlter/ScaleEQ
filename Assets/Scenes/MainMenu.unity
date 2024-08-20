@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.1341472, b: 0.121078566, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -210,8 +210,6 @@ GameObject:
   - component: {fileID: 220255501}
   - component: {fileID: 220255500}
   - component: {fileID: 220255499}
-  - component: {fileID: 220255503}
-  - component: {fileID: 220255504}
   m_Layer: 5
   m_Name: Option_Button
   m_TagString: Untagged
@@ -263,16 +261,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 220255504}
-        m_TargetAssemblyTypeName: Options, Assembly-CSharp
-        m_MethodName: LoadOptionsPage
-        m_Mode: 1
+      - m_Target: {fileID: 1983650045}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Options
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &220255500
@@ -332,31 +330,6 @@ RectTransform:
   m_AnchoredPosition: {x: 181.9, y: -150.6}
   m_SizeDelta: {x: 249, y: 107}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &220255503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220255498}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c6e9dea15a076468bc0313e92bc76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seesaw_base: {fileID: 2139913722}
---- !u!114 &220255504
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220255498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a0011ae092b3b47d786a2ddb6a0eef60, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &277315950
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,7 +342,6 @@ GameObject:
   - component: {fileID: 277315953}
   - component: {fileID: 277315952}
   - component: {fileID: 277315951}
-  - component: {fileID: 277315955}
   m_Layer: 5
   m_Name: Play_Button
   m_TagString: Untagged
@@ -420,7 +392,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 277315952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1983650045}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: ChangeScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LevelSelect
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &277315952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -478,19 +462,6 @@ RectTransform:
   m_AnchoredPosition: {x: -183, y: -151.1}
   m_SizeDelta: {x: 249, y: 107}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &277315955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 277315950}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49c6e9dea15a076468bc0313e92bc76e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seesaw_base: {fileID: 2139913722}
 --- !u!1 &452389677
 GameObject:
   m_ObjectHideFlags: 0
@@ -1360,6 +1331,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1812474234}
   m_CullTransparentMesh: 1
+--- !u!1 &1983650044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1983650046}
+  - component: {fileID: 1983650045}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1983650045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983650044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc165a76cbcbd14cb33a482be717476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1983650046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983650044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 893.34827, y: 565.631, z: -18.083464}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2139913722
 GameObject:
   m_ObjectHideFlags: 0
@@ -1371,7 +1386,6 @@ GameObject:
   - component: {fileID: 2139913723}
   - component: {fileID: 2139913725}
   - component: {fileID: 2139913724}
-  - component: {fileID: 2139913726}
   m_Layer: 5
   m_Name: seesaw_base
   m_TagString: Untagged
@@ -1436,25 +1450,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139913722}
   m_CullTransparentMesh: 1
---- !u!114 &2139913726
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2139913722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b0f1ca72ac2b046b8bc08e8cb5695c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tiltAngle: 7
-  tiltSpeed: 10
-  playButton: {fileID: 277315951}
-  optionsButton: {fileID: 220255499}
-  buttonMoveDistance: 35
-  buttonMoveSpeed: 5
-  nextScene: 0
 --- !u!1 &2141496214
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,3 +1554,4 @@ SceneRoots:
   - {fileID: 1377316943}
   - {fileID: 1231574230}
   - {fileID: 1526838942}
+  - {fileID: 1983650046}
