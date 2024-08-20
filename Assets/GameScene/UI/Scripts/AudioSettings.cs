@@ -7,29 +7,41 @@ using UnityEngine.UI;
 public class AudioSettings : MonoBehaviour
 {
     [SerializeField] private AudioMixer mixer;
-    [SerializeField] private Slider masterSlider; 
+    private Slider masterSlider, musicSlider, sfxSlider; 
 
     private void Start()
     {
-        if(PlayerPrefs.HasKey("masterVolume"))
-        {
-            LoadVolume();
-        }
-        else 
-        {
-            SetMasterVolume();
-        }
+        masterSlider = transform.Find("master").GetComponent<Slider>();
+        musicSlider = transform.Find("music").GetComponent<Slider>();
+        sfxSlider = transform.Find("sfx").GetComponent<Slider>();
+        
+        masterSlider.onValueChanged.AddListener(SetMasterVolume);
+        musicSlider.onValueChanged.AddListener(SetMusicVolume);
+        sfxSlider.onValueChanged.AddListener(SetSFXVolume);
     }
-    public void SetMasterVolume()
-    {
-        float volume = masterSlider.value;
-        mixer.SetFloat("Master", Mathf.Log10(volume)*20);
-        PlayerPrefs.SetFloat("masterVolume", volume);
-    }    
+    
 
-    private void LoadVolume()
+    private void OnDestroy()
     {
-        masterSlider.value = PlayerPrefs.GetFloat("masterVolume");
-        SetMasterVolume();
+        masterSlider.onValueChanged.RemoveAllListeners();
+        musicSlider.onValueChanged.RemoveAllListeners();
+        sfxSlider.onValueChanged.RemoveAllListeners();
     }
+
+    private void SetSFXVolume(float arg0)
+    {
+        mixer.SetFloat("SFX",Mathf.Lerp(-20,20, arg0));
+    }
+
+    private void SetMusicVolume(float arg0)
+    {
+        mixer.SetFloat("Music",Mathf.Lerp(-20,20, arg0));
+    }
+
+    private void SetMasterVolume(float arg0)
+    {
+        mixer.SetFloat("Master",Mathf.Lerp(-20,20, arg0));
+    }
+
+   
 }
