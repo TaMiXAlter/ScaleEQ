@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class UIManager : MonoBehaviour
 {
@@ -26,20 +27,31 @@ public class UIManager : MonoBehaviour
 
     #endregion
     [SerializeField] private Canvas PauseCanvas;
+    [SerializeField] private Canvas GameOverCanvas;
     [SerializeField] private Button Continue_Btm;
-    [SerializeField] private Button Restart_Btm;
-    [SerializeField] private Button Home_Btm;
+    [SerializeField] private Button[] Restart_Btm;
+    [SerializeField] private Button[] Home_Btm;
 
-    public static bool paused = false;
+    [SerializeField] private PlayerHealth _playerHealth;
+
+    public bool paused = false;
     void Start()
     {
 
         paused = false;
         PauseCanvas.gameObject.SetActive(false);
+        GameOverCanvas.gameObject.SetActive(false);
 
         Continue_Btm.onClick.AddListener(() => { Continue(); });
-        Restart_Btm.onClick.AddListener(() => { Restart(); });
-        Home_Btm.onClick.AddListener(() => { Home(); });
+        foreach (Button button in Restart_Btm)
+        {
+            button.onClick.AddListener(() => { Restart(); });
+        }
+        foreach (Button button in Home_Btm)
+        {
+            button.onClick.AddListener(() => { Home(); });
+        }
+
     }
 
     private void Home()
@@ -69,8 +81,12 @@ public class UIManager : MonoBehaviour
         {
             paused = !paused;
             PauseCanvas.gameObject.SetActive(paused);
-
         }
+
+    }
+    public void ShowGameOverCanvas()
+    {
+        GameOverCanvas.gameObject.SetActive(true);
     }
 
 }
