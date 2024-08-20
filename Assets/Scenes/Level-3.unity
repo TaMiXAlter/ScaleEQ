@@ -1567,238 +1567,262 @@ MonoBehaviour:
     SpawnPoint: {fileID: 810493666}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 77.2
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 76.2
+    SpawnPoint: {fileID: 1087838371}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 77.67
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 2642791467468650922, guid: e82eb2edf487d7d44a8587fdce2e6fdf, type: 3}
+    MoveSpeed: 0
+    SpawnTime: 76.67
+    SpawnPoint: {fileID: 2103477493}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 78.14
     SpawnPoint: {fileID: 3215241}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 78.14
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 999405212}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 78.6
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 78.14
+    SpawnPoint: {fileID: 1040999032}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 79.07
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 78.14
+    SpawnPoint: {fileID: 1072855364}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 79.53
-    SpawnPoint: {fileID: 3215241}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 78.14
+    SpawnPoint: {fileID: 1791747041}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 80
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1725132781}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 80.46
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 791855035}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
     SpawnTime: 80.93
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 177426195}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
     SpawnTime: 81.39
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 2101030054}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 81.86
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1162046184}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
-    SpawnTime: 82.32
-    SpawnPoint: {fileID: 3215241}
+    SpawnTime: 81.86
+    SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 81.86
+    SpawnPoint: {fileID: 281034234}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: -4
+    SpawnTime: 81.86
+    SpawnPoint: {fileID: 453522461}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 82.79
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 12261668}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 83.02
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 83.25
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 2133262834}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 83.72
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1007305123}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 84.18
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 2140783580}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 84.65
     SpawnPoint: {fileID: 3215241}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 85.11
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1629296798}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 85.58
+    SpawnPoint: {fileID: 1725132781}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 85.58
+    SpawnPoint: {fileID: 791855035}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 85.58
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1162046184}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
-    SpawnTime: 86.04
-    SpawnPoint: {fileID: 3215241}
+    SpawnTime: 85.58
+    SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 86.51
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 281034234}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 86.74
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 12261668}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 86.97
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 453522461}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
     SpawnTime: 87.44
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1072855364}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
     SpawnTime: 87.9
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 177426195}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
     SpawnTime: 88.37
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 2101030054}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
     SpawnTime: 88.83
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1791747041}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
     SpawnTime: 89.3
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1007305123}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
     MoveSpeed: -4
-    SpawnTime: 89.76
-    SpawnPoint: {fileID: 3215241}
+    SpawnTime: 89.3
+    SpawnPoint: {fileID: 2140783580}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 89.3
+    SpawnPoint: {fileID: 1072855364}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 2c0fdf83743ccf34c8a87df3ca891e0c, type: 3}
+    MoveSpeed: 4
+    SpawnTime: 89.3
+    SpawnPoint: {fileID: 1791747041}
+    amplitude: 0
+    frequency: 0
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 90.23
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1162046184}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 90.46
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 2133262834}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
     MoveSpeed: -4
     SpawnTime: 90.69
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 477194382}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 91.16
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 999405212}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
-    SpawnTime: 91.16
-    SpawnPoint: {fileID: 3215241}
-    amplitude: 0
-    frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 91.62
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1725132781}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 92.09
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 791855035}
     amplitude: 0
     frequency: 0
-  - Obstacle: {fileID: 0}
-    MoveSpeed: -4
+  - Obstacle: {fileID: 3163991836961255702, guid: 77db57a4b2524524b9cd82eaab12e637, type: 3}
+    MoveSpeed: 4
     SpawnTime: 92.55
-    SpawnPoint: {fileID: 3215241}
+    SpawnPoint: {fileID: 1040999032}
     amplitude: 0
     frequency: 0
   - Obstacle: {fileID: 0}
