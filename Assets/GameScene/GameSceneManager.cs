@@ -48,6 +48,8 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private GameObject Player;
     [SerializeField] private bool StartTheGame = false;
     [SerializeField] private SpawnObstacle[] SpawnObstacles;
+
+    [SerializeField] private UIManager uIManager;
     private float Timer = 0;
     private GameState state;
 
@@ -78,7 +80,7 @@ public class GameSceneManager : MonoBehaviour
                 break;
 
             case GameState.GameStart:
-                if (!UIManager.paused)
+                if (!uIManager.paused)
                 {
                     Time.timeScale = 1;
                 }
@@ -97,6 +99,8 @@ public class GameSceneManager : MonoBehaviour
             case GameState.GameOver:
 
                 Timer = 0;
+                Time.timeScale = 0;
+                uIManager.ShowGameOverCanvas();
                 break;
         }
     }
