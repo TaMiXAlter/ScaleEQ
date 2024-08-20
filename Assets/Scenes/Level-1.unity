@@ -201,6 +201,10 @@ PrefabInstance:
       propertyPath: Init_PlayerHealth
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 938616830040321408, guid: 697d822539c73094892d2596c1dc0d31, type: 3}
+      propertyPath: _playerSoundEffect
+      value: 
+      objectReference: {fileID: 1272059471}
     - target: {fileID: 2621946890913661383, guid: 697d822539c73094892d2596c1dc0d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.45
@@ -2953,6 +2957,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1272059471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1924257654212488628, guid: a015d765deb40234a8fdd220ef5e5080, type: 3}
+  m_PrefabInstance: {fileID: 1916110510}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c33cf78e22b3b408f9baf473803f6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1293600344
 GameObject:
   m_ObjectHideFlags: 0

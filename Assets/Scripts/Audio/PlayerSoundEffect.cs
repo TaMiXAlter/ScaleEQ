@@ -14,6 +14,9 @@ public class PlayerSoundEffect : MonoBehaviour
     [SerializeField] private AudioClip[] Landings;
     [SerializeField] private AudioClip[] Charges;
     [SerializeField] private AudioClip[] Realease;
+    
+    [Header("health")][SerializeField]private AudioClip[] hurt;
+    [SerializeField]private AudioClip[] dead;
     private void Awake()
     {
         MovementAudioSource = GetComponent<AudioSource>();
@@ -63,6 +66,26 @@ public class PlayerSoundEffect : MonoBehaviour
     {
         MovementAudioSource.Stop();
         AudioClip targetClip = Realease[Random.Range(0, Realease.Length)];
+        if (targetClip)
+        {
+            MovementAudioSource.PlayOneShot(targetClip);
+        }
+    }
+    
+    public void PlayHurt()
+    {
+        MovementAudioSource.Stop();
+        AudioClip targetClip = hurt[Random.Range(0, hurt.Length)];
+        if (targetClip)
+        {
+            MovementAudioSource.PlayOneShot(targetClip);
+        }
+    }
+    
+    public void PlayDead()
+    {
+        MovementAudioSource.Stop();
+        AudioClip targetClip = dead[Random.Range(0, dead.Length)];
         if (targetClip)
         {
             MovementAudioSource.PlayOneShot(targetClip);

@@ -302,6 +302,18 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  hurt:
+  - {fileID: 8300000, guid: ccd76036be939b74db59aa9a0257051e, type: 3}
+  - {fileID: 8300000, guid: 1de307cf284851645bb803de9c645f90, type: 3}
+  - {fileID: 8300000, guid: bb8cbbaa3c422094b93cc7edfbb8f1e9, type: 3}
+  - {fileID: 8300000, guid: e2242957bdbe7c34b944e39bf3d40ed0, type: 3}
+  - {fileID: 8300000, guid: aa6ea5a883823854092b1b18d5942bcc, type: 3}
+  - {fileID: 8300000, guid: cb53a446971717440b15fce027ad3959, type: 3}
+  - {fileID: 8300000, guid: 19f469a04bd6fbf44bd6918a515677b9, type: 3}
+  dead:
+  - {fileID: 8300000, guid: 773441b601a3cb04d99f7e17e2299808, type: 3}
+  - {fileID: 8300000, guid: a28a776f4d898b442aaeb1266ab55187, type: 3}
+  - {fileID: 8300000, guid: 21a4677d2ce60ed4c96a5f011b37949e, type: 3}
 --- !u!1 &5578022785830930785
 GameObject:
   m_ObjectHideFlags: 0
