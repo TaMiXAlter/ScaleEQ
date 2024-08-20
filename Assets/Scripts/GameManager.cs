@@ -22,14 +22,22 @@ public class GameManager : MonoBehaviour
     
     #endregion
     
+    public string CurrentSceneName { get => SceneManager.GetActiveScene().name; }
     private void Awake() {
         _instance = this;
         DontDestroyOnLoad(this);
     }
     
     public void ChangeScene(string sceneName) {
+        if (sceneName == CurrentSceneName)
+        {
+            SceneManager.UnloadSceneAsync(sceneName);
+        }
         SceneManager.LoadScene(sceneName);
     }
-    
-    
+
+    public void Update()
+    {
+        
+    }
 }

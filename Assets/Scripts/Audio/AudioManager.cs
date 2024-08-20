@@ -31,14 +31,14 @@ public class AudioManager : MonoBehaviour
         instance = this;
         audioFrequency = gameObject.AddComponent<AudioFrequency>();
         audioSource = GetComponent<AudioSource>();
-        GameSceneManager.Instance.startGameHandler+=StartGame;
         
         PlayerSoundEffect = transform.Find("PlayerSoundEffect").GetComponent<PlayerSoundEffect>();
     }
 
-    private void StartGame(object sender, EventArgs e)
+    public void TogglePlay(bool play)
     {
-        audioSource.Play();
+        if(play) {audioSource.Play(); return;}
+        audioSource.Pause();
     }
 
     public float[] GetAudioBuffer() {
