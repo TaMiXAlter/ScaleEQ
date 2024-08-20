@@ -43,7 +43,8 @@ public class GameSceneManager : MonoBehaviour
     {
         WaitForStart,
         GameStart,
-        GameOver
+        GameOver,
+        GamePause
     }
     [SerializeField] private GameObject Player;
     [SerializeField] private bool StartTheGame = false;
@@ -86,7 +87,6 @@ public class GameSceneManager : MonoBehaviour
                     state = GameState.GameOver;
                 }
                 break;
-
             case GameState.GameOver:
 
                 Timer = 0;
@@ -98,7 +98,7 @@ public class GameSceneManager : MonoBehaviour
     {
         foreach (SpawnObstacle _spawnObstacles in SpawnObstacles)
         {
-            if (Timer >= _spawnObstacles.SpawnTime && !_spawnObstacles.hasSpawned)
+            if (Timer >= _spawnObstacles.SpawnTime+SpawnDelayDelta && !_spawnObstacles.hasSpawned)
             {
                 GameObject obstacle = Instantiate(_spawnObstacles.Obstacle, _spawnObstacles.SpawnPoint);
                 _spawnObstacles.hasSpawned = true;
