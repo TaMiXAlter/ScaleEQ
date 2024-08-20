@@ -8,11 +8,7 @@ public class UnderButtom : MonoBehaviour
 {
     [SerializeField]
     private Button play, home;
-
-    private void Awake()
-    {
-        
-    }
+    
 
     private void OnEnable()
     {

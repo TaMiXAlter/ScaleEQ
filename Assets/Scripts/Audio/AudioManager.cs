@@ -22,7 +22,7 @@ public class AudioManager : MonoBehaviour
     #endregion
      
     private AudioFrequency audioFrequency;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     [SerializeField]
     private AudioMixer MasterMixer;
 

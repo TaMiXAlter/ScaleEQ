@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     void ChargeForDash()
     {
-        if (Input.GetKey(KeyCode.A)) {
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
             if (!isKeyDown) {
                 PlayerSoundEffect.PlayCharge();
             }
@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
        
-        if (Input.GetKey(KeyCode.D)) {
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
             if (!isKeyDown) {
                 PlayerSoundEffect.PlayCharge();
             }
@@ -85,7 +85,8 @@ public class PlayerMovement : MonoBehaviour
      
         if (isKeyDown)
         {
-            if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            if (!Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A) 
+                                         && !Input.GetKey(KeyCode.RightArrow) && !Input.GetKey(KeyCode.LeftArrow))
             {
                 PlayerAnimator.SetTrigger("Dash");
                 rigi.AddForce(movement, ForceMode2D.Impulse);

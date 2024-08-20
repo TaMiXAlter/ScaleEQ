@@ -270,6 +270,74 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &171349651
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 862809787774959194, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_Name
+      value: SoundEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460316864519347275, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+--- !u!114 &171349652 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2746955644604349270, guid: 20b59cd2543cb8a4e9ea85d155fd26df, type: 3}
+  m_PrefabInstance: {fileID: 171349651}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f9911462dca31749a9cfed60119470a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &184441943
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,10 +420,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OptionsMainBar, Assembly-CSharp
-        m_MethodName: OnButtonPressed
-        m_Mode: 3
+      - m_Target: {fileID: 171349652}
+        m_TargetAssemblyTypeName: MainMenuEffect, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -980,10 +1048,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OptionsMainBar, Assembly-CSharp
-        m_MethodName: OnButtonPressed
-        m_Mode: 3
+      - m_Target: {fileID: 171349652}
+        m_TargetAssemblyTypeName: MainMenuEffect, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1483,10 +1551,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: OptionsMainBar, Assembly-CSharp
-        m_MethodName: OnButtonPressed
-        m_Mode: 3
+      - m_Target: {fileID: 171349652}
+        m_TargetAssemblyTypeName: MainMenuEffect, Assembly-CSharp
+        m_MethodName: PlayButtonClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3425,6 +3493,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5577661216538241631, guid: a015d765deb40234a8fdd220ef5e5080, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a630517f9f5d44449a603b70a24531f, type: 3}
     - target: {fileID: 5578022785830930785, guid: a015d765deb40234a8fdd220ef5e5080, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -3959,3 +4031,4 @@ SceneRoots:
   - {fileID: 2081161828}
   - {fileID: 1215164023}
   - {fileID: 1955923225}
+  - {fileID: 171349651}

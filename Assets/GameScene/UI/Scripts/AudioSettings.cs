@@ -30,17 +30,17 @@ public class AudioSettings : MonoBehaviour
 
     private void SetSFXVolume(float arg0)
     {
-        mixer.SetFloat("SFX",Mathf.Lerp(-20,20, arg0));
+        mixer.SetFloat("SFX",Mathf.Lerp(-30,10, arg0));
     }
 
     private void SetMusicVolume(float arg0)
     {
-        mixer.SetFloat("Music",Mathf.Lerp(-20,20, arg0));
+        mixer.SetFloat("Music",Mathf.Lerp(-30,10, arg0));
     }
 
     private void SetMasterVolume(float arg0)
     {
-        mixer.SetFloat("Master",Mathf.Lerp(-20,20, arg0));
+        mixer.SetFloat("Master",Mathf.Lerp(-30,10, arg0));
     }
 
    

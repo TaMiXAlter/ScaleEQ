@@ -52,6 +52,7 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField] private float SpawnDelayDelta = 0f;
     
     public float StartTime = 0f;
+    private float EndTime;
     public float Timer = 0;
     public GameState state;
     
@@ -59,6 +60,8 @@ public class GameSceneManager : MonoBehaviour
     private bool ReadyToFinish = false;
     
     private GamePlayUI _gamePlayUI;
+    [SerializeField]
+    private GamePlayTimer _gamePlayTimer;
     private void Awake() => instance = this;
     void Start()
     {
@@ -67,9 +70,9 @@ public class GameSceneManager : MonoBehaviour
     }
     void Update()
     {
-        
         GameStateDetect();
         SpawningObstacle();
+        UpdateTimer();
     }
     private void GameStateDetect()
     {
@@ -81,6 +84,7 @@ public class GameSceneManager : MonoBehaviour
                 {
                     state = GameState.GameStart;
                     StartTime = Time.time;
+                    EndTime = StartTime + AudioManager.Instance.audioSource.clip.length;
                     AudioManager.Instance.TogglePlay(true);
                 }
                 break;
@@ -138,6 +142,11 @@ public class GameSceneManager : MonoBehaviour
             }
         }
     }
+
+    private void UpdateTimer()
+    {
+        _gamePlayTimer.SetSliderValue((Timer - StartTime)/EndTime);
+    }
     private void GetObstacleInfo(GameObject obs, SpawnObstacle spawnedObs)
     {
         if (obs.gameObject.tag == "RangeDamage")
@@ -153,7 +162,7 @@ public class GameSceneManager : MonoBehaviour
         }
         spawnedObs.hasSpawned = true;
     }
-}
+}   
 
 
 

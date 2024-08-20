@@ -24,8 +24,7 @@ public class MainMenuBG : MonoBehaviour
     }
 
 
-    void StartPlay(VideoPlayer videoPlayer)
-    {
+    void StartPlay(VideoPlayer videoPlayer) {
         videoPlayer.Play();
     }
 }

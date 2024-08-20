@@ -13,7 +13,9 @@ public class Seesaw : MonoBehaviour
     private bool isTiltLeft = false;
     private bool isTiltRight = false;
 
+    [SerializeField]
     public Button playButton;
+    [SerializeField]
     public Button optionsButton;
 
     public float buttonMoveDistance = 35f;
@@ -86,6 +88,8 @@ public class Seesaw : MonoBehaviour
 
         playButton.transform.rotation = initialPlayRotation;
         optionsButton.transform.rotation = initialOptionsRotation;
+        
+        GameManager.Instance.ChangeScene("Options");
     }
 
     Vector3 GetTargetPosition(Vector3 initialPosition, bool isMovingDown)
@@ -95,7 +99,7 @@ public class Seesaw : MonoBehaviour
 
     void LoadNextScene()
     {
-        SceneManager.LoadSceneAsync(nextScene);
+        GameManager.Instance.ChangeScene("LevelSelect");
     }
 
 }
