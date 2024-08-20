@@ -54,13 +54,17 @@ public class MovingEnemies : MonoBehaviour
             else
             {
                 lastDirection = direction;
+                if (lastDirection.x > 0)
+                {
+                    transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+                }
+                else if (lastDirection.x < 0)
+                {
+                    transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+                }
 
             }
         }
-
-        //============ Angle setting
-        float angle = Mathf.Atan2(lastDirection.y, lastDirection.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0, 0, angle);
 
         //============ Velocity setting
         rigi.velocity = lastDirection * MoveSpeed;
@@ -72,24 +76,40 @@ public class MovingEnemies : MonoBehaviour
             case MovementType.HorizontalMoving:
                 rigi.velocity = new Vector2(MoveSpeed, rigi.velocity.y);
                 direction = new Vector2(Mathf.Sign(MoveSpeed), 0);
+                DirectionToScale(direction);
                 AwarePlayer(direction);
                 break;
             case MovementType.VerticalMoving:
                 transform.rotation = Quaternion.Euler(0, 0, 90);
                 rigi.velocity = new Vector2(0, MoveSpeed);
                 direction = new Vector2(0, Mathf.Sign(MoveSpeed));
+                DirectionToScale(direction);
                 AwarePlayer(direction);
                 break;
             case MovementType.WavesMoving:
                 StartCoroutine(WaveMoveRoute());
                 direction = new Vector2(Mathf.Sign(MoveSpeed), rigi.velocity.y);
+                DirectionToScale(direction);
                 AwarePlayer(direction);
                 break;
             case MovementType.FacingPlayer:
                 MoveTowardsPlayer();
+                DirectionToScale(lastDirection);
                 AwarePlayer(lastDirection);
                 break;
         }
+    }
+    private void DirectionToScale(Vector2 move_direction)
+    {
+        if (move_direction.x > 0 || move_direction.y > 0)
+        {
+            transform.localScale = new Vector3(-1, transform.localScale.y, transform.localScale.z);
+        }
+        else if (move_direction.x < 0 || move_direction.y < 0)
+        {
+            transform.localScale = new Vector3(1, transform.localScale.y, transform.localScale.z);
+        }
+
     }
     private IEnumerator WaveMoveRoute()
     {
