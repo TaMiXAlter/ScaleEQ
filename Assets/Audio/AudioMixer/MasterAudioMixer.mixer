@@ -65,10 +65,14 @@ AudioMixerController:
   m_ExposedParameters:
   - guid: 21a89c5f7d823014f82463b3f11d9c9e
     name: Master
+  - guid: 4bb3769672e358f41a06026c986fa18f
+    name: Music
   - guid: 3d2f6b92ec357a1438f3f8f7d186e13b
     name: Freq
   - guid: cc479fa7405cdef428876300f2ca1454
     name: Gain
+  - guid: d153638ec3ecc8549b56db6e55c1cb8f
+    name: SFX
   m_AudioMixerGroupViews:
   - guids:
     - 1c6d5a48652f1bf45af9b8200406f938
@@ -123,13 +127,13 @@ AudioMixerSnapshotController:
   m_SnapshotID: d447917bbcf399e4b916236d8f0f07e3
   m_FloatValues:
     39a032d32dce9b64bbd35575ffd3b15a: 1.001
-    4bb3769672e358f41a06026c986fa18f: -4.644131
+    4bb3769672e358f41a06026c986fa18f: 0
     7c67d5c996f0f5e4dbf21ef6918942df: 671
     13773a0a1e1706d469bbd80ec6d0cbcf: 40
     c187b43b76147db48a21dd4370ffd5b4: 1
     added45e1f9c9634590e3d732ad4ff36: 9418
     d153638ec3ecc8549b56db6e55c1cb8f: -0.06161029
-    21a89c5f7d823014f82463b3f11d9c9e: -9.6097
+    21a89c5f7d823014f82463b3f11d9c9e: 0
   m_TransitionOverrides: {}
 --- !u!244 &5335582739003793596
 AudioMixerEffectController:
