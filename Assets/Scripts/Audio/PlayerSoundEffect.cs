@@ -6,8 +6,9 @@ using Random = UnityEngine.Random;
 
 public class PlayerSoundEffect : MonoBehaviour
 {
-    private AudioSource AudioSource;
-
+    private AudioSource MovementAudioSource,SlidingAudioSource;
+    [SerializeField] private float SlidingModify;
+    
     [Header("Borad")] [SerializeField] private AudioClip Sliding;
     [SerializeField] private AudioClip[] Jumps;
     [SerializeField] private AudioClip[] Landings;
@@ -15,44 +16,56 @@ public class PlayerSoundEffect : MonoBehaviour
     [SerializeField] private AudioClip[] Realease;
     private void Awake()
     {
-        AudioSource = GetComponent<AudioSource>();
+        MovementAudioSource = GetComponent<AudioSource>();
+        SlidingAudioSource = transform.Find("Sliding").GetComponent<AudioSource>();
+        SlidingAudioSource.clip = Sliding;
     }
-
-    public void ToggleSlide(bool toggle)
+    
+    public void SetSlideValue(float value)
     {
-        if (toggle)
-        {
-            AudioSource.clip = Sliding;
-            AudioSource.loop = true;
-            AudioSource.Play();
+        if (value <=0) {
+            SlidingAudioSource.Pause();
             return;
         }
         
-        AudioSource.loop = false;
-        AudioSource.Pause();
+        if (!SlidingAudioSource.isPlaying) SlidingAudioSource.Play();
+        SlidingAudioSource.volume = value*SlidingModify;
     }
 
     public void PlayJump()
     {
+        MovementAudioSource.Stop();
         AudioClip targetClip = Jumps[Random.Range(0, Jumps.Length)];
-        AudioSource.PlayOneShot(targetClip);
+        MovementAudioSource.PlayOneShot(targetClip);
+        
     }
     
     public void PlayLand()
     {
+        MovementAudioSource.Stop();
         AudioClip targetClip = Landings[Random.Range(0, Landings.Length)];
-        AudioSource.PlayOneShot(targetClip);
+        MovementAudioSource.PlayOneShot(targetClip);
+       
+        
     }
     
     public void PlayCharge()
     {
+        MovementAudioSource.Stop();
         AudioClip targetClip = Charges[Random.Range(0, Charges.Length)];
-        AudioSource.PlayOneShot(targetClip);
+        if (targetClip)
+        {
+            MovementAudioSource.PlayOneShot(targetClip);
+        }
     }
     
     public void PlayRealease()
     {
+        MovementAudioSource.Stop();
         AudioClip targetClip = Realease[Random.Range(0, Realease.Length)];
-        AudioSource.PlayOneShot(targetClip);
+        if (targetClip)
+        {
+            MovementAudioSource.PlayOneShot(targetClip);
+        }
     }
 }

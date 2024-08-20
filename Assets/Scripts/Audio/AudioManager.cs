@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
     private AudioFrequency audioFrequency;
     private AudioSource audioSource;
     [SerializeField]
-    AudioMixer MasterMixer;
+    private AudioMixer MasterMixer;
 
     public PlayerSoundEffect PlayerSoundEffect;
     private void Awake() {

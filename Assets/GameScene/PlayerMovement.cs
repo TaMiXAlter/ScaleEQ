@@ -17,6 +17,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator PlayerAnimator;
     private PlayerSoundEffect PlayerSoundEffect;
     bool isKeyDown = false;
+    private bool isInAir = false;
     void Start() {
         rigi = GetComponent<Rigidbody2D>();
         PlayerAnimator = GetComponent<Animator>();
@@ -29,15 +30,19 @@ public class PlayerMovement : MonoBehaviour
         Truning();
         
         PlayerAnimator.SetFloat("Speed", Mathf.Abs(rigi.velocity.x));
+        PlayerSoundEffect.SetSlideValue(Mathf.Abs(rigi.velocity.x)  /maxSpeed);
 
-        if (rigi.velocity.y < -5) {
+        if (rigi.velocity.y < -3 && !isInAir)
+        {
+            isInAir = true;
             PlayerAnimator.SetBool("LeavingGround", true);
-            PlayerSoundEffect.ToggleSlide(false);
+            PlayerSoundEffect.SetSlideValue(0);
             PlayerSoundEffect.PlayJump();
         }
-        else {
+        else if (rigi.velocity.y >= 0 && isInAir)
+        {
+            isInAir = false;
             PlayerAnimator.SetBool("LeavingGround", false);
-            PlayerSoundEffect.ToggleSlide(true);
             PlayerSoundEffect.PlayLand();
         }
         
@@ -55,18 +60,24 @@ public class PlayerMovement : MonoBehaviour
     void ChargeForDash()
     {
         if (Input.GetKey(KeyCode.A)) {
+            if (!isKeyDown)
+            {
+                PlayerSoundEffect.PlayCharge();
+            }
             isKeyDown = true;
             if(movement.x > -maxSpeed) {
                 movement.x -= SpeedDelta*Time.deltaTime;
-                PlayerSoundEffect.PlayCharge();
+                
             }
         }
        
         if (Input.GetKey(KeyCode.D)) {
+            if (!isKeyDown) {
+                PlayerSoundEffect.PlayCharge();
+            }
             isKeyDown = true;
             if(movement.x < maxSpeed) {
                 movement.x += SpeedDelta*Time.deltaTime;
-                PlayerSoundEffect.PlayCharge();
             }
         }
      
