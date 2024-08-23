@@ -20,7 +20,7 @@ namespace UI
                 GameManager.Instance.ChangeScene(GameManager.Instance.CurrentSceneName);
                 GameSceneManager.Instance.StartTime = Time.time;
             });
-            Home.onClick.AddListener(() => { GameManager.Instance.ChangeScene("MainMenu"); });
+            Home.onClick.AddListener(() => { GameManager.Instance.ChangeScene("LevelSelect"); });
         }
 
         private void OnDisable()

@@ -23,7 +23,14 @@ public class GameManager : MonoBehaviour
     #endregion
     
     public string CurrentSceneName { get => SceneManager.GetActiveScene().name; }
-    private void Awake() {
+    private void Awake()
+    {
+        GameManager gm =  FindObjectOfType<GameManager>();
+        if (gm != this && gm != null)
+        {
+            GameObject.Destroy(this.gameObject);
+            return;
+        }
         _instance = this;
         DontDestroyOnLoad(this);
     }
